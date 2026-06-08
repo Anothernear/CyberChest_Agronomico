@@ -1,0 +1,1992 @@
+[
+  {
+    "dominio_academico": "Agrometeorología y Bioquímica (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Radiación Neta",
+        "definicion_uach": "Balance entre la radiación solar entrante y la radiación terrestre saliente, fundamental para el diseño de estructuras de protección.",
+        "ecuacion": "R_n = (1 - \\alpha)R_s + R_{ld} - R_{lu}",
+        "variables_relacionadas": [
+          "Radiación Solar",
+          "Albedo",
+          "Radiación Terrestre"
+        ],
+        "aplicacion_practica": "Determinación de la carga térmica en invernaderos para el diseño de sistemas de ventilación y sombreado."
+      },
+      {
+        "termino": "Grados Días de Desarrollo (GDD)",
+        "definicion_uach": "Índice térmico que cuantifica la acumulación de calor necesaria para que una planta complete sus fases fenológicas.",
+        "ecuacion": "GDD = \\sum \\left( \\frac{T_{max} + T_{min}}{2} - T_{base} \\right)",
+        "variables_relacionadas": [
+          "Temperatura Máxima",
+          "Temperatura Mínima",
+          "Temperatura Base"
+        ],
+        "aplicacion_practica": "Predicción de la fecha de cosecha y programación de siembras en horticultura protegida."
+      },
+      {
+        "termino": "Evapotranspiración (ET)",
+        "definicion_uach": "Pérdida combinada de agua por evaporación del suelo y transpiración de las plantas.",
+        "ecuacion": "ET_c = K_c \\times ET_o",
+        "variables_relacionadas": [
+          "Coeficiente de cultivo (Kc)",
+          "Evapotranspiración de referencia (ETo)"
+        ],
+        "aplicacion_practica": "Cálculo de láminas de riego y diseño de sistemas de fertirriego en ambientes controlados."
+      },
+      {
+        "termino": "Metabolitos Secundarios",
+        "definicion_uach": "Compuestos orgánicos sintetizados por las plantas que no participan directamente en el crecimiento, pero son cruciales para la defensa y adaptación ecológica.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Terpenoides",
+          "Compuestos Fenólicos",
+          "Alcaloides"
+        ],
+        "aplicacion_practica": "Uso de fitoalexinas y alelopáticos como bioplaguicidas naturales en la producción orgánica."
+      },
+      {
+        "termino": "Antocianinas",
+        "definicion_uach": "Pigmentos hidrosolubles pertenecientes al grupo de los flavonoides (compuestos fenólicos) responsables de las coloraciones rojas, púrpuras y azules.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Compuestos Fenólicos",
+          "Luz",
+          "Temperatura"
+        ],
+        "aplicacion_practica": "Indicador de calidad visual y valor nutricional en hortalizas y frutos bajo invernadero."
+      },
+      {
+        "termino": "Enzimas Indicadoras",
+        "definicion_uach": "Proteínas catalíticas cuya actividad varía ante la deficiencia de macro o microelementos específicos.",
+        "ecuacion": "v = \\frac{V_{max}[S]}{K_m + [S]}",
+        "variables_relacionadas": [
+          "Cinética enzimática",
+          "Nutrición mineral",
+          "Cofactores"
+        ],
+        "aplicacion_practica": "Diagnóstico precoz de deficiencias nutrimentales antes de la aparición de síntomas visuales."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la Radiación Solar > Umbral de saturación fotosintética",
+        "consecuencia_biologica": "Fotoinhibición y posible daño térmico a los tejidos foliares.",
+        "accion_ingenieril": "Activación de mallas de sombreado o sistemas de nebulización (fogging)."
+      },
+      {
+        "condicion": "Si la Temperatura < Temperatura Letal",
+        "consecuencia_biologica": "Cristalización del agua intracelular y ruptura de membranas (daño por helada).",
+        "accion_ingenieril": "Activación de sistemas de calefacción o riego por aspersión para protección térmica."
+      },
+      {
+        "condicion": "Si el Déficit de Presión de Vapor (DPV) > 2.0 kPa",
+        "consecuencia_biologica": "Cierre estomático excesivo y reducción de la tasa fotosintética.",
+        "accion_ingenieril": "Aumento de la humedad relativa mediante humidificadores o paneles evaporativos."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "ELÍAS, C.F. Y CASTELLVI S.F. 1996. Agrometeorología. Mundi-Prensa.",
+      "Lehninger, A. L, Nelson, D.L., y Cox, M.M. 1995. Principios de Bioquímica. Omega.",
+      "BARRADAS, V.L. 1994. Instrumentación Biometeorológica. UNAM/FCE.",
+      "Melo, V., y Cuamatzi, O. 2007. Bioquímica de los Procesos Metabólicos. Reverté."
+    ]
+  },
+  {
+    "dominio_academico": "Ecofisiología (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Determinantes Ecofisiológicos del Rendimiento",
+        "definicion_uach": "Factores que afectan el crecimiento y desarrollo de un cultivo y su rendimiento final, incluyendo la radiación interceptada, eficiencia de la radiación, distribución de materia seca, y pérdidas por respiración.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Radiación interceptada por el dosel",
+          "Eficiencia de la radiación en la producción de materia seca",
+          "Distribución de la materia seca",
+          "Pérdidas de materia seca por respiración",
+          "Duración del crecimiento vegetativo y reproductivo"
+        ],
+        "aplicacion_practica": "Optimización de la producción en horticultura protegida mediante el manejo de factores que influyen en el rendimiento."
+      },
+      {
+        "termino": "Índices Fisiotécnicos",
+        "definicion_uach": "Herramientas y métricas utilizadas para el análisis funcional del crecimiento de las plantas, como la tasa relativa de crecimiento, tasa de asimilación neta y el índice de área foliar.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Tasa relativa de crecimiento",
+          "Tasa absoluta de crecimiento",
+          "Tasa de asimilación neta",
+          "Tasa de crecimiento del cultivo",
+          "Índice de área foliar",
+          "Tasa foliar unitaria",
+          "Razón de área foliar",
+          "Área foliar específica",
+          "Duración del área foliar"
+        ],
+        "aplicacion_practica": "Investigación agronómica para evaluar el impacto de diferentes tratamientos o condiciones ambientales en el crecimiento de los cultivos."
+      },
+      {
+        "termino": "Arquetipo Vegetal",
+        "definicion_uach": "Concepto de planta ideal con características específicas para ambientes determinados, como los sistemas de Horticultura Protegida, considerando aspectos genéticos y culturales.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Procedimientos genéticos",
+          "Prácticas culturales",
+          "Ambientes protegidos"
+        ],
+        "aplicacion_practica": "Diseño y selección de variedades de cultivos adaptadas a condiciones específicas de invernadero para maximizar la eficiencia y el rendimiento."
+      },
+      {
+        "termino": "Límites de Tolerancia Ambiental",
+        "definicion_uach": "Rangos de factores ambientales (luz, CO2, temperatura, humedad, etc.) que una planta puede soportar sin sufrir estrés o daño significativo, influyendo en su crecimiento y desarrollo.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Luz",
+          "CO2",
+          "Temperatura",
+          "Humedad relativa",
+          "Viento",
+          "Humedad edáfica",
+          "Oxigenación de la raíz",
+          "pH",
+          "Concentración de sales",
+          "Nutrición mineral",
+          "Plagas y enfermedades",
+          "Sustancias tóxicas"
+        ],
+        "aplicacion_practica": "Desarrollo de criterios de manejo y control ambiental en sistemas de producción protegida para mantener las condiciones óptimas para el cultivo."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la radiación interceptada por el dosel es subóptima para la fase fenológica actual",
+        "consecuencia_biologica": "Reducción de la eficiencia de la radiación en la producción de materia seca y, consecuentemente, del rendimiento.",
+        "accion_ingenieril": "Ajuste de la densidad de siembra, optimización de la distribución de plantas o implementación de iluminación suplementaria."
+      },
+      {
+        "condicion": "Si los factores ambientales (temperatura, humedad, CO2) exceden los límites de tolerancia del cultivo",
+        "consecuencia_biologica": "Estrés fisiológico, reducción del crecimiento, daño a los tejidos o susceptibilidad a plagas y enfermedades.",
+        "accion_ingenieril": "Activación de sistemas de control climático (calefacción, ventilación, humidificación, inyección de CO2) en invernaderos para restaurar las condiciones óptimas."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Atherton, J. G., and J. Rudich (editores). 1986. The tomato Crop. Chapman and Hall. Londres, Inglaterra.",
+      "Gardner, F. P., Pearce, R. B., and Mitchel, R. L. 1990. Physiology of Crop Plants. Iowa State University Press. Iowa, EUA.",
+      "Jones, H. G., 1986. Plants and Microclimate. A Quantitative Approach to Environmental Plant Physiology. Cambridge University Press. Londres, Inglaterra.",
+      "Salisbury, F. B., and C. W. Ross., 1994. Fisiología vegetal. Grupo Editorial Iberoamericana. México, D. F."
+    ]
+  },
+  {
+    "dominio_academico": "Nutrición Vegetal (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Acceso Nutrimental",
+        "definicion_uach": "Mecanismos mediante los cuales los nutrimentos disponibles en el suelo son llevados hacia la raíz de la planta, incluyendo flujo de masas, difusión e interceptación-intercambio por contacto.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Flujo de masas",
+          "Difusión",
+          "Interceptación-intercambio por contacto",
+          "Rizósfera",
+          "Textura del suelo",
+          "Humedad del suelo"
+        ],
+        "aplicacion_practica": "Optimización de la disponibilidad de nutrientes en el sustrato para mejorar la absorción por las plantas en sistemas de horticultura protegida."
+      },
+      {
+        "termino": "Absorción Nutrimental",
+        "definicion_uach": "Proceso por el cual los nutrimentos pasan del exterior al interior de las raíces, involucrando mecanismos pasivos y activos, y condicionado por la anatomía de la raíz y la composición de la pared y membrana celular.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Movimiento apoplástico",
+          "Movimiento simplásmico",
+          "Potenciales electroquímicos",
+          "Transportadores",
+          "Cotransporte",
+          "Factores endógenos y exógenos"
+        ],
+        "aplicacion_practica": "Manejo de las condiciones del medio radicular (pH, oxigenación) para favorecer la absorción eficiente de nutrientes por los cultivos."
+      },
+      {
+        "termino": "Transporte de Nutrimentos y Fotosintatos",
+        "definicion_uach": "Movimiento y distribución de los nutrimentos y metabolitos dentro de la planta, desde la raíz hasta los órganos de consumo, a través del xilema y el floema.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Relación fuente-demanda",
+          "Transporte radial",
+          "Transporte en el xilema",
+          "Transporte en el floema",
+          "Factores que afectan el transporte"
+        ],
+        "aplicacion_practica": "Diagnóstico de problemas de translocación de nutrientes y aplicación de correctivos para asegurar una distribución adecuada en la planta."
+      },
+      {
+        "termino": "Funciones de los Nutrimentos",
+        "definicion_uach": "Papel específico de cada elemento esencial en los procesos bioquímicos, fisiológicos y ecológicos de la planta, incluyendo su participación en la formación de moléculas y su interacción con el ambiente.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Antagonismo",
+          "Sinergismo",
+          "Funciones bioquímicas",
+          "Funciones fisiológicas",
+          "Funciones ecológicas"
+        ],
+        "aplicacion_practica": "Formulación de programas de fertilización balanceados para satisfacer las necesidades específicas de los cultivos en diferentes etapas de desarrollo."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la concentración de un nutrimento esencial en la solución del suelo es baja",
+        "consecuencia_biologica": "Reducción del crecimiento, deficiencias nutricionales y disminución del rendimiento.",
+        "accion_ingenieril": "Aplicación de fertilizantes específicos o ajuste del pH del suelo para aumentar la disponibilidad del nutriente."
+      },
+      {
+        "condicion": "Si la absorción de un nutriente es inhibida por factores externos (ej. pH extremo, anoxia radicular)",
+        "consecuencia_biologica": "Acumulación del nutriente en el suelo y deficiencia en la planta, a pesar de su presencia.",
+        "accion_ingenieril": "Corrección de las condiciones del suelo o sustrato (ej. aireación, ajuste de pH) para optimizar la absorción."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Bidwell, R. G. S., 1993. Fisiología Vegetal. AGT Editor. México, D. F.",
+      "Salisbury, F. B., and C. W. Ross., 1994. Fisiología vegetal. Grupo Editorial Iberoamericana. México, D. F."
+    ]
+  },
+  {
+    "dominio_academico": "Diagnóstico y Control de Plagas Hortícolas (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Manejo Integrado de Plagas (MIP)",
+        "definicion_uach": "Estrategia que combina diferentes métodos de control (cultural, biológico, físico, químico) para mantener las poblaciones de plagas por debajo del umbral de daño económico, minimizando el impacto ambiental.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Umbral de daño económico",
+          "Monitoreo de plagas",
+          "Control biológico",
+          "Control cultural",
+          "Control físico",
+          "Control químico"
+        ],
+        "aplicacion_practica": "Implementación de programas de control de plagas sostenibles en cultivos protegidos, reduciendo la dependencia de pesticidas químicos."
+      },
+      {
+        "termino": "Factores Ambientales y Plagas",
+        "definicion_uach": "Influencia de condiciones como temperatura, luz, humedad relativa, viento, lluvia y suelo en el desarrollo y dispersión de poblaciones de plagas en cultivos protegidos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Temperatura",
+          "Luz",
+          "Humedad relativa",
+          "Viento",
+          "Lluvia",
+          "Suelo"
+        ],
+        "aplicacion_practica": "Modificación del microclima del invernadero para crear condiciones desfavorables para el desarrollo de plagas y reducir su incidencia."
+      },
+      {
+        "termino": "Pesticidas y su Aplicación",
+        "definicion_uach": "Clasificación y características de los productos químicos y biológicos utilizados para el control de plagas, así como las técnicas de calibración de equipos de aplicación y el uso de equipo de protección personal.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Insecticidas biológicos",
+          "Insecticidas químicos",
+          "Productos repelentes",
+          "Calibración de equipos",
+          "Equipo de protección personal"
+        ],
+        "aplicacion_practica": "Aplicación segura y eficiente de productos fitosanitarios, asegurando la dosis correcta y minimizando riesgos para el aplicador y el medio ambiente."
+      },
+      {
+        "termino": "Métodos de Control de Plagas",
+        "definicion_uach": "Diversas estrategias para el manejo de plagas, incluyendo control legal (normativas), físico (barreras), cultural (prácticas agrícolas), biológico (organismos benéficos) y químico (pesticidas).",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Control legal",
+          "Control físico",
+          "Control cultural",
+          "Control biológico",
+          "Control químico"
+        ],
+        "aplicacion_practica": "Selección del método de control más apropiado para cada situación específica de plaga y cultivo, integrando diferentes enfoques para una gestión efectiva."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la población de una plaga supera el umbral de daño económico",
+        "consecuencia_biologica": "Pérdidas significativas en el rendimiento y calidad del cultivo.",
+        "accion_ingenieril": "Implementación de medidas de control directo, priorizando opciones biológicas o culturales antes que químicas."
+      },
+      {
+        "condicion": "Si las condiciones ambientales son favorables para el desarrollo de una plaga específica",
+        "consecuencia_biologica": "Aumento rápido de la población de la plaga y mayor riesgo de infestación.",
+        "accion_ingenieril": "Monitoreo intensivo de la plaga y aplicación de medidas preventivas o de control temprano."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Sistemas Hidropónicos (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Hidroponía",
+        "definicion_uach": "Sistema de producción en el que las raíces de las plantas se irrigan con una mezcla de elementos nutritivos esenciales disueltos en el agua, utilizando un material inerte o la misma solución nutritiva como sustrato.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Solución nutritiva",
+          "Sustratos inertes",
+          "Cultivo sin suelo"
+        ],
+        "aplicacion_practica": "Producción de hortalizas y flores en ambientes controlados, optimizando el uso de agua y nutrientes."
+      },
+      {
+        "termino": "Soluciones Nutritivas",
+        "definicion_uach": "Mezclas de elementos esenciales disueltos en agua, formuladas para satisfacer las necesidades nutricionales específicas de los cultivos en sistemas hidropónicos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Concentración de nutrientes",
+          "pH",
+          "Conductividad eléctrica",
+          "Fuentes fertilizantes"
+        ],
+        "aplicacion_practica": "Cálculo, preparación y manejo de soluciones para asegurar una nutrición óptima y corregir deficiencias o toxicidades."
+      },
+      {
+        "termino": "Sustratos Absorbentes",
+        "definicion_uach": "Materiales inertes utilizados en hidroponía para proporcionar soporte físico a las plantas y retener la solución nutritiva, con propiedades físicas y químicas específicas.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Capacidad de retención de agua",
+          "Aireación",
+          "Estabilidad química",
+          "Volumen"
+        ],
+        "aplicacion_practica": "Selección y manejo adecuado de sustratos (ej. lana de roca, fibra de coco, perlita) para diferentes especies y sistemas hidropónicos."
+      },
+      {
+        "termino": "Modalidades de Cultivo Hidropónico",
+        "definicion_uach": "Diferentes técnicas de cultivo sin suelo, como el sistema de balsa, la técnica de la película nutritiva (NFT), New Growing System (NGS), aeroponía y cultivo en grava.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Cultivo en balsa",
+          "NFT",
+          "NGS",
+          "Aeroponía",
+          "Cultivo en grava"
+        ],
+        "aplicacion_practica": "Diseño e implementación del sistema hidropónico más adecuado según el tipo de cultivo, recursos disponibles y objetivos de producción."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si el análisis químico del agua de riego indica alta concentración de sales o elementos no deseados",
+        "consecuencia_biologica": "Toxicidad para las plantas y desequilibrio nutricional.",
+        "accion_ingenieril": "Ajuste de la formulación de la solución nutritiva o tratamiento previo del agua para adecuarla a los estándares hidropónicos."
+      },
+      {
+        "condicion": "Si se observan síntomas de deficiencia o toxicidad de nutrientes en las plantas hidropónicas",
+        "consecuencia_biologica": "Reducción del crecimiento, rendimiento y calidad del cultivo.",
+        "accion_ingenieril": "Revisión y ajuste de la composición de la solución nutritiva, pH y conductividad eléctrica para corregir el desequilibrio."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Producción de Hortalizas (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Horticultura Protegida",
+        "definicion_uach": "Cultivo de hortalizas bajo estructuras de protección (acolchados, microtúneles, invernaderos) para asegurar altos rendimientos, calidad e inocuidad, frente a factores ambientales adversos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Invernaderos",
+          "Acolchados",
+          "Microtúneles",
+          "Fertirriego",
+          "Suelo",
+          "Hidroponía"
+        ],
+        "aplicacion_practica": "Producción intensiva de hortalizas de alto valor económico, como jitomate, chiles, pepinos, lechugas y fresas, en condiciones controladas."
+      },
+      {
+        "termino": "Producción de Plántulas",
+        "definicion_uach": "Técnicas y procedimientos para la producción exitosa de plántulas de calidad de diferentes especies olerícolas, incluyendo tipos de propagación, almácigos, sustratos, siembra y manejo ambiental.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Propagación",
+          "Almácigos",
+          "Sustratos",
+          "Siembra",
+          "Riego",
+          "Nutrición",
+          "Control fitosanitario",
+          "Injerto",
+          "Vernalización"
+        ],
+        "aplicacion_practica": "Establecimiento de cultivos con material vegetal sano y vigoroso, adaptado a las condiciones de horticultura protegida."
+      },
+      {
+        "termino": "Manejo del Cultivo (Jitomate, Chiles, Pepinos, Lechugas, Fresas)",
+        "definicion_uach": "Conjunto de prácticas agrícolas específicas para cada especie hortícola bajo sistemas protegidos, abarcando desde la elección de cultivares hasta la cosecha y postcosecha.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Cultivares",
+          "Siembra",
+          "Trasplante",
+          "Riego",
+          "Nutrición",
+          "Control ambiental (temperatura, luz, humedad)",
+          "Poda",
+          "Conducción/Entutorado",
+          "Control fitosanitario",
+          "Cosecha",
+          "Clasificación y empaque"
+        ],
+        "aplicacion_practica": "Optimización de los procesos productivos para maximizar el rendimiento y la calidad de las hortalizas en invernaderos y otros sistemas protegidos."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si los rangos de factores climáticos y edáficos no son óptimos para una especie hortícola específica",
+        "consecuencia_biologica": "Reducción del crecimiento, desarrollo y rendimiento, así como problemas de calidad.",
+        "accion_ingenieril": "Ajuste de las condiciones ambientales dentro del invernadero (temperatura, humedad, luz) y manejo del sustrato (riego, nutrición) para adecuarlos a los requerimientos del cultivo."
+      },
+      {
+        "condicion": "Si se detectan plagas o enfermedades en el cultivo de hortalizas protegidas",
+        "consecuencia_biologica": "Daños en el cultivo, pérdidas de rendimiento y calidad, y posible propagación a otras plantas.",
+        "accion_ingenieril": "Implementación de un programa de control fitosanitario integrado, priorizando métodos preventivos y biológicos, y utilizando productos químicos de forma selectiva y responsable."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Producción de Flores y Ornamentales (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Floricultura y Plantas de Ornato",
+        "definicion_uach": "Actividad agrícola enfocada en la producción de flores de corte y plantas ornamentales, con importancia económica y social, especialmente bajo ambientes protegidos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Flores de corte",
+          "Plantas en maceta",
+          "Invernaderos",
+          "Mercado"
+        ],
+        "aplicacion_practica": "Desarrollo de proyectos productivos de alto valor en agricultura protegida, considerando las oportunidades comerciales a nivel nacional e internacional."
+      },
+      {
+        "termino": "Técnicas de Producción de Flores de Corte",
+        "definicion_uach": "Métodos y prácticas específicas para el cultivo de flores de corte de importancia económica (rosas, clavel, crisantemo, gerbera, tulipán, lilium, anthurium), incluyendo manejo ambiental, propagación, control fitosanitario y rentabilidad.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Tipos y variedades",
+          "Manejo ambiental",
+          "Propagación (esquejes, bulbos)",
+          "Prácticas de manejo",
+          "Control de plagas y enfermedades",
+          "Costos de cultivo"
+        ],
+        "aplicacion_practica": "Dominio del proceso productivo desde el establecimiento hasta la cosecha, para asegurar la calidad y rentabilidad de las flores de corte."
+      },
+      {
+        "termino": "Producción de Plantas Ornamentales en Maceta",
+        "definicion_uach": "Técnicas para el cultivo de especies ornamentales en macetas (nochebuena, otras flores y follajes), abarcando manejo ambiental, propagación, labores de cultivo y control fitosanitario.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Especies y variedades",
+          "Manejo ambiental",
+          "Propagación y reproducción",
+          "Labores de manejo",
+          "Control de plagas y enfermedades"
+        ],
+        "aplicacion_practica": "Implementación de proyectos productivos de plantas ornamentales en maceta en agricultura protegida."
+      },
+      {
+        "termino": "Mercados y Comercio de Ornamentales",
+        "definicion_uach": "Análisis de los canales de comercialización, criterios de cosecha, manejo poscosecha e indicadores de venta para flores de corte y plantas ornamentales en maceta.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Criterios de cosecha",
+          "Manejo poscosecha",
+          "Mercados nacionales e internacionales",
+          "Indicadores de venta"
+        ],
+        "aplicacion_practica": "Toma de decisiones estratégicas para la comercialización exitosa de productos de floricultura y ornamentales."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se busca maximizar la rentabilidad en la producción de flores de corte",
+        "consecuencia_biologica": "Selección de variedades de alta demanda y optimización de las condiciones de cultivo para obtener la mejor calidad y rendimiento.",
+        "accion_ingenieril": "Implementación de sistemas de control climático avanzado y fertirriego preciso, junto con un manejo integrado de plagas y enfermedades."
+      },
+      {
+        "condicion": "Si se detectan problemas de calidad en las flores o plantas ornamentales (ej. coloración deficiente, tamaño inadecuado)",
+        "consecuencia_biologica": "Reducción del valor comercial y dificultad para acceder a mercados exigentes.",
+        "accion_ingenieril": "Revisión de las prácticas de manejo (nutrición, riego, control ambiental) y ajuste según los requerimientos específicos de la especie y el mercado."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Aplicación Hortícola (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Ejecución y Operación de Proyectos de Inversión",
+        "definicion_uach": "Fase posterior a la planeación de proyectos hortícolas, donde se ponen en práctica las actividades para la consolidación de una empresa rural, incluyendo el análisis del estudio de ingeniería y el programa de ejecución.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Estudio de ingeniería",
+          "Programa de ejecución",
+          "Consolidación de empresa rural"
+        ],
+        "aplicacion_practica": "Implementación de proyectos productivos en campo, ya sea en unidades en marcha o en nuevas iniciativas, con el apoyo de asesoría especializada."
+      },
+      {
+        "termino": "Instalación o Ejecución",
+        "definicion_uach": "Aplicación práctica de los planteamientos de ejecución de actividades plasmadas en el documento del proyecto, formalizando el inicio de la instalación del proyecto.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Acuerdos y convenios",
+          "Gestión de recursos",
+          "Organización"
+        ],
+        "aplicacion_practica": "Establecimiento de las bases legales, financieras y organizativas para el arranque de un proyecto hortícola."
+      },
+      {
+        "termino": "Operación del Proyecto",
+        "definicion_uach": "Proceso operativo de un proyecto dentro de una unidad de producción o empresa, mediante actividades de programación y definición de instrumentos de control para la toma de decisiones.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Diseño de instrumentos de control (ingresos, egresos)",
+          "Bitácoras",
+          "Supervisión"
+        ],
+        "aplicacion_practica": "Monitoreo y control de las actividades diarias de la empresa hortícola para identificar problemas y tomar decisiones oportunas."
+      },
+      {
+        "termino": "Plan de Mejora",
+        "definicion_uach": "Elaboración de un plan basado en observaciones cualitativas y cuantitativas durante la operación, sistematizando datos para generar nuevas propuestas que mejoren la productividad y competitividad.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Diagnóstico",
+          "Análisis de variaciones",
+          "Detección de problemas",
+          "Diseño de estrategias"
+        ],
+        "aplicacion_practica": "Optimización continua de los procesos productivos y administrativos de la empresa hortícola para incrementar la eficiencia y rentabilidad."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si los instrumentos de registro y control detectan desviaciones significativas en el programa de ejecución o en los indicadores financieros",
+        "consecuencia_biologica": "Retrasos en el proyecto, sobrecostos o disminución de la rentabilidad esperada.",
+        "accion_ingenieril": "Activación del plan de mejora, realizando un diagnóstico, análisis de variaciones y diseño de estrategias correctivas."
+      },
+      {
+        "condicion": "Si el análisis estratégico del entorno revela nuevas necesidades o oportunidades de mercado",
+        "consecuencia_biologica": "Posibilidad de expandir el negocio o mejorar la competitividad.",
+        "accion_ingenieril": "Desarrollo de nuevas propuestas o adaptación de las existentes para aprovechar las oportunidades detectadas."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Producción de Frutales (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Fruticultura Intensiva",
+        "definicion_uach": "Sistema de producción de frutales que busca altos rendimientos por unidad de superficie y mejor calidad de productos, a menudo utilizando producción forzada y programación de cosechas.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Altas densidades de plantación",
+          "Producción forzada",
+          "Programación de cosechas",
+          "Calidad del fruto"
+        ],
+        "aplicacion_practica": "Establecimiento de huertos frutícolas con variedades adaptadas y manejo técnico para maximizar la rentabilidad y el acceso a mercados."
+      },
+      {
+        "termino": "Yemas, Flores y Frutos",
+        "definicion_uach": "Componentes reproductivos de los frutales, cuyo desarrollo y crecimiento son influenciados por factores ambientales y determinan la productividad y calidad del producto.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Clasificación de yemas",
+          "Letargo y compensadores de frío",
+          "Diferenciación floral",
+          "Polinización y fecundación",
+          "Alternancia en la producción",
+          "Caídas de frutos",
+          "Aclareo de frutos",
+          "Desarrollo y maduración del fruto"
+        ],
+        "aplicacion_practica": "Manejo de la floración y fructificación para optimizar la carga de frutos y asegurar una cosecha de calidad."
+      },
+      {
+        "termino": "Planeación y Manejo de Huertos",
+        "definicion_uach": "Conjunto de decisiones y prácticas para el establecimiento y mantenimiento de huertos frutícolas, incluyendo la selección de variantes de poda, manejo del suelo, riego, fertilización y control fitosanitario.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Poda y sistemas de conducción",
+          "Manejo de agua y suelo",
+          "Fertilización (análisis foliar, suelo)",
+          "Control fitosanitario (plagas, enfermedades, malezas)",
+          "Cosecha y manejo postcosecha"
+        ],
+        "aplicacion_practica": "Diseño e implementación de estrategias de manejo para huertos tradicionales e intensivos, adaptadas a las condiciones agroclimáticas y la especie cultivada."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la diferenciación floral es insuficiente o la polinización es deficiente",
+        "consecuencia_biologica": "Baja producción de frutos o frutos de mala calidad.",
+        "accion_ingenieril": "Aplicación de técnicas para inducir la floración, mejorar la polinización (ej. introducción de polinizadores) o realizar aclareo de frutos para optimizar el tamaño."
+      },
+      {
+        "condicion": "Si los análisis de suelo o foliares indican deficiencias nutricionales en el huerto",
+        "consecuencia_biologica": "Reducción del crecimiento, desarrollo y rendimiento de los frutales.",
+        "accion_ingenieril": "Ajuste del programa de fertilización, utilizando fuentes específicas y métodos de aplicación adecuados para corregir las deficiencias."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Sistemas Hidropónicos y Nutrición Vegetal (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Solución Nutritiva (SN)",
+        "definicion_uach": "Agua con oxígeno y todos los nutrimentos esenciales en forma iónica, regida por las leyes de la química inorgánica, que provee la proporción adecuada para evitar desequilibrios en el medio de cultivo. [cite: 1072, 1074, 1077]",
+        "ecuacion": "[K+] + [Ca2+] + [Mg2+] + [NH4+] = [NO3-] + [H2PO4-] + [SO4 2-] = C [cite: 1145]",
+        "variables_relacionadas": [
+          "pH",
+          "Presión osmótica",
+          "Concentración de amonio",
+          "Temperatura",
+          "Oxígeno disuelto"
+        ],
+        "aplicacion_practica": "Formulación del equilibrio iónico que se adapta al ritmo de absorción de la planta según su etapa fenológica para obtener máximos rendimientos. [cite: 1080, 1082]"
+      },
+      {
+        "termino": "Presión Osmótica (PO)",
+        "definicion_uach": "Fuerza ejercida por la cantidad total de los iones de las sales disueltas en la solución nutritiva; a mayor presión, la planta invierte más energía para absorber agua y nutrimentos. [cite: 1108, 1111]",
+        "ecuacion": "CE = Suma de cationes / 10 [cite: 1122]",
+        "variables_relacionadas": [
+          "Conductividad Eléctrica (CE)",
+          "Condición ambiental (época del año)",
+          "Deficiencia hídrica"
+        ],
+        "aplicacion_practica": "Ajuste de la conductividad eléctrica para evitar deficiencias de iones que se mueven por flujo de masas (Ca2+ y Mg2+) debido a alta concentración de sales. [cite: 1120, 1124]"
+      },
+      {
+        "termino": "Equilibrio Mutuo de Iones (Técnica Steiner)",
+        "definicion_uach": "Relación cuantitativa específica entre los aniones (NO3-, H2PO4-, SO4 2-) y los cationes (K+, Ca2+, Mg2+) para evitar limitaciones fisiológicas y reacciones de precipitación en la solución nutritiva. [cite: 1130, 1134]",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Límites fisiológicos",
+          "Límites de precipitación",
+          "Presión osmótica"
+        ],
+        "aplicacion_practica": "Diseño sistemático de la solución nutritiva usando triángulos de relación porcentual para ajustar los miliequivalentes de cada nutrimento a un pH y presión osmótica definidos. [cite: 1196, 1201]"
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si el pH de la solución nutritiva es mayor a 6.5 [cite: 1088, 1101]",
+        "consecuencia_biologica": "El fósforo soluble (H2PO4-) disminuye a menos del 70% y existe riesgo de que el calcio y el magnesio precipiten con el ion HPO4. [cite: 1094, 1101]",
+        "accion_ingenieril": "Aplicar un ácido comercial (nítrico, fosfórico o sulfúrico) para neutralizar los bicarbonatos y transformar el exceso a CO2 volatilizado. [cite: 1095, 1097]"
+      },
+      {
+        "condicion": "Si la temperatura de la solución nutritiva es menor a 15 grados Celsius [cite: 1165]",
+        "consecuencia_biologica": "Se suberiza la endodermis de la raíz, disminuyendo drásticamente la absorción de agua y nutrimentos, provocando deficiencias de calcio, fósforo y hierro. [cite: 1166, 1168]",
+        "accion_ingenieril": "Activar sistemas de calefacción, usar soluciones nutritivas más concentradas y reforzar el suministro de fosfatos, calcio y hierro. [cite: 1167, 1170]"
+      },
+      {
+        "condicion": "Si el porcentaje del ion amonio (NH4+) excede el 25% del total de nitrógeno en etapas de floración y fructificación [cite: 1154]",
+        "consecuencia_biologica": "Inducción de toxicidad por acidez en la zona radical, disminución en la absorción de cationes (K, Ca, Mg) y pudrición apical en los frutos. [cite: 1151, 1154]",
+        "accion_ingenieril": "Excluir o reducir la fuente amoniacal, manteniendo el N-NO3- como fuente principal (hasta un 80-90% de la sumatoria de aniones). [cite: 1153, 1154]"
+      },
+      {
+        "condicion": "Si el oxígeno disuelto en la solución nutritiva es menor a 3 o 4 mg/L-1 [cite: 1186]",
+        "consecuencia_biologica": "Disminución del crecimiento radical, necrosamiento (raíz color pardo) e inhibición en la absorción de todos los macronutrimentos a excepción de los nitratos. [cite: 1185, 1186]",
+        "accion_ingenieril": "Reducir la temperatura de la solución para aumentar la concentración de saturación de oxígeno, manteniéndola cercana a los 22 grados Celsius. [cite: 1172, 1182]"
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Steiner, A.A. 1961. A universal method for preparing nutrient solutions of a certain desired composition. Plant Soil 15: 134-154. [cite: 1809]",
+      "Steiner, A.A. 1984. The universal nutrient solution. pp. 633-650. In: Proceedings 6th International Congress on Soilles Culture. Wageningen, The Netherlands. [cite: 1813]",
+      "De Rijck, G. and E. Schrevens. 1998. Comparison of the mineral composition of twelve standar nutrient solutions. J. Plant Nut. 21:2115-2125. [cite: 1759]",
+      "Adams, P. and L.C. Ho. 1992. The susceptibility of modern tomato cutivars to blossom-end rot in relation to salinity. J. Hort. Sci. 67: 827-839. [cite: 1745]"
+    ]
+  },
+  {
+    "dominio_academico": "Fundamentos de Fertirrigación y Formulación Nutritiva",
+    "conceptos_clave": [
+      {
+        "termino": "Fertirrigación",
+        "definicion_uach": "Aportación de fertilizantes disueltos en el agua de riego, típicamente combinada con riego localizado, que permite aplicar los nutrientes en el momento y dosis que la planta necesita.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Humedad del bulbo",
+          "Dosis de nutrientes",
+          "Pérdidas por lixiviación",
+          "Obturación de goteros"
+        ],
+        "aplicacion_practica": "Corrección rápida de deficiencias nutricionales, ahorro de agua y fertilizantes, y mejora medioambiental mediante la localización precisa de nutrientes en la zona radicular."
+      },
+      {
+        "termino": "Solución Nutritiva",
+        "definicion_uach": "Disolución acuosa que contiene oxígeno y parte o la totalidad de los nutrientes (macro y microelementos) completamente disociados en forma iónica y disponible para la planta.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Cationes (carga positiva)",
+          "Aniones (carga negativa)",
+          "Oxígeno disuelto"
+        ],
+        "aplicacion_practica": "Provisión balanceada de elementos esenciales para cultivos en suelo y sin suelo, ajustando los aportes según la fuente de agua y las impurezas de los abonos."
+      },
+      {
+        "termino": "Unidades de Concentración Iónica",
+        "definicion_uach": "Sistemas de medida para cuantificar solutos en la solución nutritiva. Se expresan comúnmente en masa (mg/L o ppm), moles (mmol/L) o equivalentes químicos (meq/L).",
+        "ecuacion": "mmol/L = (mg/L) / Masa Atómica o Molecular ; meq/L = mmol/L \\times Valencia",
+        "variables_relacionadas": [
+          "Masa atómica",
+          "Masa molecular",
+          "Valencia (número de cargas)",
+          "milimoles por litro (mmol/L)",
+          "miliequivalentes por litro (meq/L)"
+        ],
+        "aplicacion_practica": "Estandarización de cálculos para formulaciones hidropónicas. El uso de mmol/L es el estándar técnico recomendado para sistemas sin suelo en regiones hortícolas avanzadas."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se implementa un sistema de fertirrigación con riego localizado",
+        "consecuencia_biologica": "Mantenimiento constante de la humedad en el bulbo radicular y mejor asimilación de los nutrientes.",
+        "accion_ingenieril": "Garantizar una alta uniformidad en el reparto del agua, capacitar al personal operativo y usar abonos de alta solubilidad para evitar obturaciones en los goteros."
+      },
+      {
+        "condicion": "Si el cultivo sin suelo se riega con aguas pobres en sílice y utiliza sustratos inertes",
+        "consecuencia_biologica": "Ausencia de disponibilidad de silicio, el cual es un macroelemento benéfico para la resistencia estructural de la planta.",
+        "accion_ingenieril": "Añadir fuentes específicas de silicio a la formulación de la solución nutritiva (a diferencia del cobalto y vanadio, que suelen cubrirse con las impurezas de los fertilizantes)."
+      },
+      {
+        "condicion": "Si los análisis de suelo o fertilizantes reportan los macronutrientes en forma de óxidos (ej. P2O5, K2O, CaO)",
+        "consecuencia_biologica": "Imposibilidad de sumar directamente las cargas iónicas para calcular el equilibrio electroquímico de la solución.",
+        "accion_ingenieril": "Aplicar factores de conversión de óxidos a iones elementales en mmol/L (ej. 1 mmol H2PO4- = 70.97 mg P2O5; 1 mmol Ca2+ = 56.08 mg CaO) antes de formular."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Santos Coello, B. y Ríos Mesa, D. (2016). Cálculo de Soluciones Nutritivas: En suelo y sin suelo. Cabildo Insular de Tenerife. Capítulo I."
+    ]
+  },
+  {
+    "dominio_academico": "Factores de Formulación y Dinámica de Fertilizantes (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Conductividad Eléctrica (CE) y Potencial Osmótico",
+        "definicion_uach": "Medida de la cantidad total de iones disueltos. A mayor salinidad (mayor CE), el potencial osmótico aumenta, creando resistencia a la entrada de agua en la raíz.",
+        "ecuacion": "1 dS/m = 1 mS/cm = 1000 µS/cm",
+        "variables_relacionadas": [
+          "Salinidad del agua",
+          "Concentración de abonos",
+          "Demanda evaporativa",
+          "Desarrollo vegetativo vs generativo"
+        ],
+        "aplicacion_practica": "Ajuste de la concentración iónica ('CE consigna') para balancear la nutrición óptima sin provocar estrés hídrico; se requiere medición diaria en sistemas sin suelo."
+      },
+      {
+        "termino": "Dinámica del pH y Especies Fosfatadas",
+        "definicion_uach": "La disponibilidad de nutrientes está gobernada por el pH. En el caso del fósforo, el pH determina la forma química presente, afectando su solubilidad y riesgo de precipitación con calcio.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Ion dihidrogenofosfato (H2PO4-)",
+          "Ion hidrogenofosfato (HPO4 2-)",
+          "Precipitación de Calcio"
+        ],
+        "aplicacion_practica": "Mantenimiento estricto del pH entre 5.5 y 6.0 en hidroponía para asegurar que hasta el 98% del fósforo esté como H2PO4-, evitando obstrucciones por fosfato de calcio."
+      },
+      {
+        "termino": "Equilibrio Ácido-Base Radicular (Relación NH4+/NO3-)",
+        "definicion_uach": "Modificación del pH del entorno radicular debido a la absorción diferencial de iones. La absorción de cationes (amonio) libera H+ (acidifica), mientras que la de aniones (nitrato) libera OH- (alcaliniza).",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Absorción selectiva",
+          "Excreción de protones (H+)",
+          "Excreción de hidroxilos (OH-)"
+        ],
+        "aplicacion_practica": "Uso de una relación estándar de 1/10 (NH4+/NO3-) en sustrato para estabilizar el pH, modificándola estratégicamente solo para corregir descompensaciones temporales."
+      },
+      {
+        "termino": "Neutralización de Bicarbonatos",
+        "definicion_uach": "Proceso químico para destruir bicarbonatos (y carbonatos) del agua de riego mediante la inyección de ácidos comerciales, transformándolos en CO2 para estabilizar el pH.",
+        "ecuacion": "Volumen_{ácido} (L/m^3) = (meq/L_{HCO3} \\times MasaMolecular) / (Valencia \\times 10 \\times Riqueza \\times Densidad)",
+        "variables_relacionadas": [
+          "Ácido nítrico (valencia 1)",
+          "Ácido sulfúrico (valencia 2)",
+          "Ácido fosfórico (valencia ~1 a pH 5.5)",
+          "Riqueza y Densidad del ácido comercial"
+        ],
+        "aplicacion_practica": "Cálculo volumétrico exacto de ácido requerido en el cabezal de riego para llevar las aguas alcalinas a un pH objetivo."
+      },
+      {
+        "termino": "Estabilidad de Quelatos de Hierro",
+        "definicion_uach": "Rango de pH en el cual las moléculas orgánicas (quelatos) logran proteger al ión metálico de la precipitación o reacción con otros compuestos en el suelo o solución.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "EDTA (estable hasta pH 6-6.5)",
+          "DTPA (estable hasta pH 7-7.5)",
+          "EDDHA (estable entre pH 4 y 9)"
+        ],
+        "aplicacion_practica": "Selección del quelato férrico adecuado según el pH de la solución y del sustrato (ej. prefiriendo EDDHA en condiciones alcalinas)."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se aporta un exceso de ion amonio (NH4+) y altas temperaturas en la raíz",
+        "consecuencia_biologica": "Fuerte acidificación del medio, toxicidad directa y antagonismo severo que bloquea la absorción de Potasio (K) y Calcio (Ca), causando pudrición apical (blossom-end rot).",
+        "accion_ingenieril": "Restringir la relación NH4+/NO3- a un máximo de 1/10 en cultivos sin suelo y evitar el uso de urea o complejos amídicos en hidroponía."
+      },
+      {
+        "condicion": "Si el agua de riego supera los 8 meq/L de bicarbonatos",
+        "consecuencia_biologica": "Efecto tampón extremo que eleva el pH, precipita nutrientes y hace muy difícil la estabilización en el rango óptimo (5.5 - 6.0).",
+        "accion_ingenieril": "Inyectar mezclas de ácidos fuertes (nítrico/fosfórico) asumiendo el aporte nutricional de sus aniones, o considerar la aplicación de urea fosfato sólida como coadyuvante acidificante."
+      },
+      {
+        "condicion": "Si la temperatura de la solución nutritiva en sistemas sin sustrato (NFT/NGS) supera los 25°C",
+        "consecuencia_biologica": "Caída del oxígeno disuelto por debajo del umbral crítico (9 mg/L) y limitación en la absorción radicular.",
+        "accion_ingenieril": "Activar sistemas de oxigenación forzada o refrigeración del tanque de solución nutritiva para compensar la baja solubilidad de los gases."
+      },
+      {
+        "condicion": "Si el análisis indica altos contenidos de cloruros en el agua de riego",
+        "consecuencia_biologica": "Toxicidad por iones Cl- debido a la competencia de absorción con aniones esenciales.",
+        "accion_ingenieril": "Incrementar la concentración de nitratos (NO3-) en la formulación para aprovechar el antagonismo iónico e inhibir la captación radicular de cloruros."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Santos Coello, B. y Ríos Mesa, D. (2016). Cálculo de Soluciones Nutritivas: En suelo y sin suelo. Capítulos II y III.",
+      "Steiner, A.A. (1996). Rangos aceptables de relaciones entre iones en soluciones nutritivas.",
+      "Norvell (1983). Comparación de la estabilidad de diferentes quelatos de hierro con el pH.",
+      "Lemaire et al. (1989). Modificación del pH de la solución nutritiva por mecanismos fisiológicos y Repartición de especies."
+    ]
+  },
+  {
+    "dominio_academico": "Cálculo, Inyección y Estabilidad de la Solución Nutritiva",
+    "conceptos_clave": [
+      {
+        "termino": "Estimación de la Conductividad Eléctrica (CE)",
+        "definicion_uach": "Métodos matemáticos para predecir la CE final de la solución nutritiva. Incluyen el método gravimétrico (TDS), el método de los aportes (factores de conversión por sal) y el método de los equivalentes.",
+        "ecuacion": "CE_{total} = (TDS_{aportes} + TDS_{agua} - TDS_{bicarbonatos}) / 0.85",
+        "variables_relacionadas": [
+          "Sólidos Totales Disueltos (TDS)",
+          "Factores de conversión a CE",
+          "Suma de miliequivalentes"
+        ],
+        "aplicacion_practica": "Definición de la 'CE consigna' en los controladores del cabezal de riego para asegurar que la mezcla de abonos corresponda a la conductividad objetivo del cultivo."
+      },
+      {
+        "termino": "Relación de Inyección (Soluciones Madre)",
+        "definicion_uach": "Proporción volumétrica entre la solución nutritiva final y la concentración en los tanques de fertilizante, dictando el volumen de inyección necesario por metro cúbico de agua.",
+        "ecuacion": "Concentración_{madre} = Concentración_{nutritiva} \\times Relación_{inyección}",
+        "variables_relacionadas": [
+          "Tasa de inyección (1:50 a 1:200)",
+          "Volumen del tanque de mezcla",
+          "Porcentaje de apertura de electroválvula"
+        ],
+        "aplicacion_practica": "Cálculo de los kilogramos o litros de fertilizante comercial que deben disolverse en los tanques concentrados A, B, C y de Ácido para la automatización del fertirriego."
+      },
+      {
+        "termino": "Precipitación de Fosfato Dicálcico (CaHPO4)",
+        "definicion_uach": "Reacción química indeseable dependiente del pH donde el ion hidrogenofosfato reacciona con el calcio, formando un compuesto insoluble que precipita y bloquea los goteros.",
+        "ecuacion": "[Ca^{2+}] \\times [HPO_4^{2-}] > 10^{-7}",
+        "variables_relacionadas": [
+          "Producto de solubilidad",
+          "Ábacos de Charpentier",
+          "Relaciones de Steiner"
+        ],
+        "aplicacion_practica": "Validación algorítmica de la receta: asegura que el calcio no supere el 65% de cationes y el fosfato no supere el 12.5% de aniones en la solución final."
+      },
+      {
+        "termino": "Precipitación de Sulfato de Calcio (CaSO4)",
+        "definicion_uach": "Insolubilización del azufre y calcio que ocurre independientemente del pH cuando las concentraciones superan el límite termodinámico en la solución.",
+        "ecuacion": "[Ca^{2+}] \\times [SO_4^{2-}] > 2 \\times 10^{-4}",
+        "variables_relacionadas": [
+          "Producto de solubilidad",
+          "Concentración de Sulfatos"
+        ],
+        "aplicacion_practica": "Mantener las soluciones madre de calcio estrictamente separadas (Tanque A) de las fuentes de sulfatos y fosfatos (Tanques B/C) en el cabezal de riego."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la CE calculada teóricamente es significativamente diferente a la 'CE consigna' óptima tolerada por el cultivo",
+        "consecuencia_biologica": "Riesgo de estrés osmótico (si es mayor) o deficiencia nutricional (si es menor).",
+        "accion_ingenieril": "Recalcular la solución nutritiva reduciendo proporcionalmente los abonos, o igualar la consigna a la calculada asumiendo un incremento en la fracción de lavado (drenaje)."
+      },
+      {
+        "condicion": "Si el agua de riego (ej. galerías) posee alta alcalinidad y la neutralización requiere exceder el límite fisiológico de inyección de ácido nítrico (14 mmol/L NO3-)",
+        "consecuencia_biologica": "Desequilibrio vegetativo grave por exceso de nitrógeno nítrico y contaminación de drenajes.",
+        "accion_ingenieril": "Sustituir una fracción del ácido nítrico por ácido sulfúrico para destruir bicarbonatos, o aportar una fracción del calcio como CaCl2 para habilitar un mayor margen de uso de HNO3."
+      },
+      {
+        "condicion": "Si el sistema de automatismo registra caídas abruptas de pH (picos) cada vez que inyecta un pulso de ácido",
+        "consecuencia_biologica": "Fluctuaciones extremas en el entorno radicular y parada de inyección de fertilizantes por bloqueo del controlador.",
+        "accion_ingenieril": "Diluir la concentración del tanque de ácido o derivar hasta el 80% del requerimiento de ácido nítrico al tanque del nitrato de calcio para amortiguar el pulso."
+      },
+      {
+        "condicion": "Si las relaciones de Steiner indican riesgo de precipitación (Ca > 65% de cationes o SO4 > 45% de aniones)",
+        "consecuencia_biologica": "Obstrucción física de los emisores de riego y pérdida de la disponibilidad de los nutrientes implicados.",
+        "accion_ingenieril": "Modificar el equilibrio de la matriz de formulación antes de enviar la receta de dosificación al cabezal, verificando mediante el producto de solubilidad."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Santos Coello, B. y Ríos Mesa, D. (2016). Cálculo de Soluciones Nutritivas. Capítulo IV.",
+      "Steiner, A.A. (1988). La composición de las soluciones nutritivas (Criterios de precipitación).",
+      "Charpentier (1985). Ábacos de solubilidad del fosfato en función del pH y calcio.",
+      "Sonnenveld, C. (1989). A method for calculating the composition of nutrients solutions for soilless cultures."
+    ]
+  },
+  {
+    "dominio_academico": "Preparación y Manejo de Soluciones Madre",
+    "conceptos_clave": [
+      {
+        "termino": "Incompatibilidad Química (Separación de Tanques)",
+        "definicion_uach": "Reacciones antagónicas entre fertilizantes concentrados que generan precipitados insolubles. La regla fundamental es la separación física del Calcio respecto a los Sulfatos y Fosfatos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Tanque A (Sulfatos y Fosfatos)",
+          "Tanque B/C (Nitrato de Calcio)",
+          "Fosfatos metálicos (Fe, Al)"
+        ],
+        "aplicacion_practica": "Diseño de la distribución de fertilizantes en cabezales de riego con múltiples inyectores, asegurando que sales reactivas solo se mezclen en forma diluida en la red principal."
+      },
+      {
+        "termino": "Disolución Endotérmica",
+        "definicion_uach": "Reacción física característica de abonos nitrogenados (especialmente nitrato amónico y nitrato potásico) que absorbe energía del medio, disminuyendo drásticamente la temperatura del agua en el tanque.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Temperatura del agua",
+          "Tasa de solubilidad máxima",
+          "Sobresaturación"
+        ],
+        "aplicacion_practica": "Alteración del orden de mezclado de fertilizantes, dejando los abonos endotérmicos para el final, a fin de evitar que el descenso de temperatura impida la disolución de otras sales."
+      },
+      {
+        "termino": "Límite Práctico de Solubilidad",
+        "definicion_uach": "Concentración máxima segura de abonos sólidos en un tanque para evitar precipitaciones por efecto de ion común o fluctuaciones térmicas. Se fija con un coeficiente de seguridad del 80-90% de la solubilidad teórica.",
+        "ecuacion": "Concentración_{máxima} \\leq 15\\% \\text{ a } 20\\% \\text{ peso/volumen} (150-200 \\text{ kg} / 1000 \\text{ L})",
+        "variables_relacionadas": [
+          "Efecto del ion común",
+          "Volumen del tanque",
+          "Relación de inyección"
+        ],
+        "aplicacion_practica": "Cálculo de la dilución necesaria en soluciones madre. Si se supera el límite, se debe diluir el tanque e incrementar proporcionalmente la tasa de inyección en el controlador."
+      },
+      {
+        "termino": "Orden Estricto de Mezclado",
+        "definicion_uach": "Secuencia operativa para preparar la solución madre que minimiza riesgos de reacciones violentas, cristalización y daños a los quelatos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Agua (50% volumen inicial)",
+          "Ácidos fuertes",
+          "Sales menos solubles",
+          "Sales endotérmicas"
+        ],
+        "aplicacion_practica": "Protocolo de operario: 1) Mitad de agua, 2) Ácido lentamente, 3) Sales de menor a mayor solubilidad, 4) Quelatos verificando pH, 5) Sales nitrogenadas (endotérmicas), 6) Aforar y agitar."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se mezcla nitrato de calcio con cualquier fuente de sulfato (ej. K2SO4, MgSO4) o fosfato (ej. H3PO4) en el mismo tanque concentrado",
+        "consecuencia_biologica": "Inutilización de los nutrientes por formación inmediata de yeso (CaSO4) o fosfato de calcio (CaHPO4) sólido.",
+        "accion_ingenieril": "Separar obligatoriamente las fuentes: depositar el Calcio y Magnesio en un tanque específico (ej. Tanque C), y los Fosfatos/Sulfatos en otro (ej. Tanque A o B)."
+      },
+      {
+        "condicion": "Si se requiere añadir microelementos en forma de quelato a la solución madre",
+        "consecuencia_biologica": "Riesgo de degradación de la molécula orgánica protectora si se somete a un pH extremo, liberando el metal a precipitación.",
+        "accion_ingenieril": "Añadir los quelatos únicamente después de haber inyectado el ácido al tanque y verificar que el pH local del tanque se encuentre en el rango de estabilidad (generalmente entre 4.0 y 6.0)."
+      },
+      {
+        "condicion": "Si la suma total de fertilizantes calculados para un tanque supera el 15-20% de su capacidad (150-200 kg por 1000 Litros)",
+        "consecuencia_biologica": "Saturación del solvente, estratificación de la solución y cristalización masiva en el fondo del tanque (especialmente con sulfato potásico).",
+        "accion_ingenieril": "Diluir el volumen del tanque reduciendo la masa de fertilizante y compensar aumentando matemáticamente la relación de inyección en el software del cabezal."
+      },
+      {
+        "condicion": "Si se utilizan altas concentraciones de ácido sulfúrico para destruir bicarbonatos en la preparación del tanque",
+        "consecuencia_biologica": "Reacción fuertemente exotérmica que eleva la temperatura del agua de forma peligrosa y emite vapores.",
+        "accion_ingenieril": "Añadir siempre el ácido sobre un volumen grande de agua (nunca al revés) y hacerlo de forma lenta antes de incorporar cualquier sal sólida."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Santos Coello, B. y Ríos Mesa, D. (2016). Cálculo de Soluciones Nutritivas. Capítulo IV: Colocación de abonos en los tanques y compatibilidades químicas."
+    ]
+  },
+  {
+    "dominio_academico": "Introducción y Sistemas de Cultivo Sin Suelo (Hidroponía)",
+    "conceptos_clave": [
+      {
+        "termino": "Cultivo Sin Suelo",
+        "definicion_uach": "Conjunto de técnicas agrícolas que permiten el crecimiento y desarrollo de las plantas fuera de su entorno natural en suelo, utilizando agua con nutrientes disociados como medio directo o apoyándose en un sustrato inerte.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Sistemas hidropónicos",
+          "Sustratos inertes",
+          "Solución nutritiva"
+        ],
+        "aplicacion_practica": "Diseño de instalaciones hortícolas en zonas con suelos degradados, salinos o con presencia de patógenos radiculares de difícil control."
+      },
+      {
+        "termino": "Sistemas Abiertos (Perdida de Drenaje)",
+        "definicion_uach": "Modalidad de cultivo sin suelo donde la solución nutritiva sobrante que drena del sustrato no se vuelve a recolectar para el cultivo, siendo evacuada hacia el entorno.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Fracción de lavado",
+          "Lixiviación de nitratos",
+          "Eficiencia en el uso del agua"
+        ],
+        "aplicacion_practica": "Manejo clásico en sustratos de perlita o lana de roca que requiere un control riguroso del porcentaje de drenaje para evitar la acumulación de sales en la rizosfera, con un impacto ambiental que debe ser monitoreado."
+      },
+      {
+        "termino": "Sistemas Cerrados (Recirculantes)",
+        "definicion_uach": "Modalidad donde la solución nutritiva lixiviada es recogida, analizada, desinfectada y reajustada químicamente para volver a ser reinyectada al sistema de cultivo.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Recirculación",
+          "Desinfección biológica",
+          "Desequilibrio iónico"
+        ],
+        "aplicacion_practica": "Diseño de sistemas NFT (Nutrient Film Technique) o NGS de máxima eficiencia hídrica, ideales para regiones con escasez severa de agua, exigiendo algoritmos automáticos de corrección de nutrientes debido al agotamiento diferencial de iones."
+      },
+      {
+        "termino": "Dinámica de Absorción de Nutrientes",
+        "definicion_uach": "Proceso mediante el cual las raíces absorben agua y elementos minerales de forma selectiva, modificando continuamente la concentración y las relaciones iónicas de la solución circundante.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Absorción selectiva",
+          "Presión osmótica de la rizosfera",
+          "Agotamiento iónico"
+        ],
+        "aplicacion_practica": "Programación de la renovación periódica de la solución nutritiva en sistemas recirculantes para evitar la acumulación de iones no esenciales (como el sodio) y la escasez de macronutrientes esenciales."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se opta por un sistema hidropónico cerrado o recirculante para el manejo del cultivo",
+        "consecuencia_biologica": "Riesgo crítico de dispersión exponencial de patógenos radiculares (como Pythium o Phytophthora) a través de la solución y desequilibrios electroquímicos rápidos por absorción selectiva de la planta.",
+        "action_ingenieril": "Instalar obligatoriamente un módulo automatizado de desinfección (ozono, radiación UV o filtración biológica) en el retorno del drenaje y reprogramar el ajuste periódico de la conductividad eléctrica y balance iónico."
+      },
+      {
+        "condicion": "Si el suelo agrícola de la unidad de producción presenta salinidad severa, nematodos o problemas estructurales de drenaje imposibles de mitigar económicamente",
+        "consecuencia_biologica": "Pérdida drástica del rendimiento comercial, marchitez y asfixia radicular en cultivos sensibles.",
+        "action_ingenieril": "Transicionar la producción hacia un sistema de cultivo sin suelo en sacos o canaletas aisladas, seleccionando un sustrato inerte que permita el control absoluto de la zona radicular."
+      },
+      {
+        "condicion": "Si la calidad de la luz solar o la temperatura ambiental en el sistema hidropónico cerrado disminuyen significativamente (fases invernales o nubosidad prolongada)",
+        "consecuencia_biologica": "Reducción de la tasa de transpiración de la planta y acumulación de nitratos en los tejidos vegetales debido a una menor actividad fotosintética.",
+        "action_ingenieril": "Modificar la frecuencia de fertirrigación disminuyendo el número de riegos diarios y ajustar el equilibrio de la solución nutritiva reduciendo los aportes de nitrógeno nítrico."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Urrestarazu Gavilán, M. (2015). Manual práctico del cultivo sin suelo e hidroponía. Ediciones Mundi-Prensa. Capítulo 1: Introducción, conceptos y justificación de los cultivos sin suelo."
+    ]
+  },
+  {
+    "dominio_academico": "Propiedades y Manejo de Sustratos Hortícolas (Hidroponía)",
+    "conceptos_clave": [
+      {
+        "termino": "Capacidad de Intercambio Catiónico (CIC)",
+        "definicion_uach": "Cantidad de cationes que pueden ser retenidos en la superficie cargada negativamente de una partícula del sustrato. Clasifica a los sustratos en químicamente inertes (baja CIC, ej. lana de roca) o químicamente activos (alta CIC, ej. turba).",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "pH",
+          "Conductividad Eléctrica",
+          "Efecto tampón"
+        ],
+        "aplicacion_practica": "Elección del manejo del fertirriego; sustratos con alta CIC amortiguan errores puntuales de pH y desequilibrios de nutrientes, siendo ideales para fertirriego intermitente."
+      },
+      {
+        "termino": "Agua Fácilmente Disponible (AFD)",
+        "definicion_uach": "Proporción de agua retenida en el sustrato entre las tensiones de 10 y 50 cm de columna de agua, requiriendo escasa energía de succión por parte de las raíces.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Frecuencia de riego",
+          "Índice de cosecha",
+          "Potencial matricial"
+        ],
+        "aplicacion_practica": "Ajuste de la dotación y frecuencia de riego. Un exceso de AFD puede inducir un alto vigor vegetativo en detrimento de la calidad del fruto (grados Brix) por falta de estrés hídrico."
+      },
+      {
+        "termino": "Capacidad de Aireación",
+        "definicion_uach": "Proporción del volumen del sustrato que contiene aire después de ser saturado con agua y dejado drenar. Depende fuertemente de los macroporos (>30 µm).",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Altura del contenedor",
+          "Oxigenación radical",
+          "Hipoxia"
+        ],
+        "aplicacion_practica": "Selección del sustrato y geometría del contenedor para evitar la asfixia radical, aspecto crítico en cultivos muy demandantes de oxígeno como el pepino."
+      },
+      {
+        "termino": "Sustratos Alternativos Sostenibles",
+        "definicion_uach": "Materiales orgánicos renovables o subproductos agroindustriales (ej. fibra de coco, cáscara de almendra, compost, cascarilla de arroz) que reducen el impacto ambiental frente a la extracción de turbas o la fabricación de lana de roca.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Huella de carbono",
+          "Degradación microbiológica",
+          "Relación C/N"
+        ],
+        "aplicacion_practica": "Sustitución de sustratos tradicionales ajustando obligatoriamente las estrategias de fertirriego para compensar nuevas propiedades físicas (como una menor retención hídrica)."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se utilizan sustratos con muy baja retención de agua y alta porosidad (ej. cascarilla de arroz, cáscara de almendra pura)",
+        "consecuencia_biologica": "Rápido agotamiento de la reserva hídrica en la rizosfera, induciendo un estrés hídrico severo en poco tiempo si no se compensa.",
+        "accion_ingenieril": "Incrementar el volumen del contenedor asignado por planta, aumentar significativamente la frecuencia de fertirrigación y aplicar dotaciones (volumen) muy pequeñas en cada riego."
+      },
+      {
+        "condicion": "Si se cultiva una especie altamente exigente en oxígeno radical (ej. pepino) en comparación con una más tolerante (ej. tomate)",
+        "consecuencia_biologica": "Mayor susceptibilidad a la hipoxia radical, oscurecimiento de raíces y proliferación de microorganismos patógenos (Pythium, Phytophthora) ante excesos de humedad.",
+        "accion_ingenieril": "Seleccionar un sustrato con una capacidad de aireación garantizada superior al 20-30% y utilizar unidades de cultivo con mayor predominio del eje vertical para aumentar la columna de aireación y el drenaje."
+      },
+      {
+        "condicion": "Si se utiliza turba rubia o negra y se permite que el sustrato pierda su humedad casi por completo entre riegos",
+        "consecuencia_biologica": "Pérdida extrema de la mojabilidad (requiriendo hasta 17 minutos para rehidratarse), impidiendo que el agua del nuevo riego impregne la rizosfera.",
+        "accion_ingenieril": "Mantener un monitoreo estricto de humedad para evitar que caiga por debajo del umbral crítico de rehumectación, programando riegos frecuentes de seguridad o usando agentes humectantes."
+      },
+      {
+        "condicion": "Si se emplea compost de residuos hortícolas o sustratos orgánicos marinos como sustrato puro",
+        "consecuencia_biologica": "Posible fitotoxicidad por inmadurez, inmovilización del nitrógeno, elevada salinidad inicial y pH alcalino que bloquea la absorción de microelementos.",
+        "accion_ingenieril": "Acondicionar el material obligatoriamente antes del trasplante mediante lavados profundos para disminuir la CE, neutralizar el pH y asegurar la madurez bioquímica (estabilización de la relación C/N)."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Urrestarazu Gavilán, M. (2015). Manual práctico del cultivo sin suelo e hidroponía. Ediciones Mundi-Prensa. Capítulo 2: Los sustratos hortícolas y su relación con el manejo y las unidades de cultivo."
+    ]
+  },
+  {
+    "dominio_academico": "Cálculo Nutricional y Morfología de Sistemas (Hidroponía)",
+    "conceptos_clave": [
+      {
+        "termino": "Morfología y Potencial Matricial del Contenedor",
+        "definicion_uach": "La disposición espacial del sustrato altera drásticamente la capacidad de retención de agua por efecto de la gravedad, independientemente del volumen total. Las unidades tipo saco retienen más agua útil que las unidades tipo cubeta de eje vertical dominante. (1)-1-50.pdf]",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Contenedor horizontal",
+          "Contenedor vertical",
+          "Capacidad de retención"
+        ],
+        "aplicacion_practica": "Modificación de la dotación y frecuencia de riego; un sustrato de baja retención hídrica (ej. cascarilla de arroz) exige contenedores de morfología horizontal (sacos o canaletas). (1)-1-50.pdf]"
+      },
+      {
+        "termino": "Conversión Estequiométrica de Fertilizantes",
+        "definicion_uach": "Cálculo para pasar de concentración en peso (g/L) a concentración molar (mmol/L) y normal (meq/L) basándose en el peso molecular anhidro y la valencia del fertilizante comercial. (1)-1-50.pdf]",
+        "ecuacion": "cm = cp / Pm \\times 1000 ; cn = cm \\times v (1)-1-50.pdf]",
+        "variables_relacionadas": [
+          "Concentración en peso (cp)",
+          "Peso Molecular (Pm)",
+          "Valencia (v)"
+        ],
+        "aplicacion_practica": "Transformación de las formulaciones ideales a kilogramos exactos de sal comercial a disolver en los tanques de inyección. (1)-1-50.pdf]"
+      },
+      {
+        "termino": "Valoración de Bicarbonatos (Umbral de Seguridad)",
+        "definicion_uach": "Técnica de neutralización que consiste en añadir ácido al agua de riego para eliminar los bicarbonatos, pero dejando sin neutralizar exactamente 0.5 meq/L para aprovechar la curva de valoración como efecto tampón. (1)-1-50.pdf]",
+        "ecuacion": "Ácido_necesario (meq/L) = [HCO_3^-] - 0.5 (1)-1-50.pdf]",
+        "variables_relacionadas": [
+          "Curvas de valoración",
+          "pH óptimo",
+          "Efecto Tampón"
+        ],
+        "aplicacion_practica": "Mantener 0.5 meq/L de bicarbonato estabiliza el pH en aproximadamente 5.8, previniendo caídas bruscas que dañarían las raíces. (1)-1-50.pdf]"
+      },
+      {
+        "termino": "Estimación de CE de Sonneveld",
+        "definicion_uach": "Aproximación matemática válida para soluciones nutritivas en el intervalo de 1.5 a 4.0 dS/m, donde la conductividad eléctrica es directamente proporcional a la suma de miliequivalentes de los cationes. (1)-1-50.pdf]",
+        "ecuacion": "CE_{teórica} (dS/m) = \\Sigma Cationes / 10 (1)-1-50.pdf]",
+        "variables_relacionadas": [
+          "Conductividad Eléctrica (CE)",
+          "Miliequivalentes de Cationes"
+        ],
+        "aplicacion_practica": "Verificación del nivel salino de la receta antes de la inyección para asegurar que se encuentre en los rangos de tolerancia del cultivo. (1)-1-50.pdf]"
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se emplea un sustrato de muy baja retención de agua (como cáscara de almendra o cascarilla de arroz) (1)-1-50.pdf]",
+        "consecuencia_biologica": "Rápido agotamiento hídrico que somete a la planta a estrés severo entre riegos. (1)-1-50.pdf]",
+        "accion_ingenieril": "Utilizar contenedores de morfología horizontal (sacos o canaletas planas) para aumentar la retención hídrica por capilaridad, incrementando la frecuencia y disminuyendo la dotación de riego. (1)-1-50.pdf]"
+      },
+      {
+        "condicion": "Si el agua de riego presenta una concentración de bicarbonatos superior a 5.5 meq/L (1)-1-50.pdf]",
+        "consecuencia_biologica": "Imposibilidad de neutralizar la alcalinidad usando exclusivamente ácido fosfórico sin sobrepasar el límite de toxicidad de fósforo en la rizosfera. (1)-1-50.pdf]",
+        "accion_ingenieril": "Combinar la inyección de ácido fosfórico con ácido nítrico para neutralizar los bicarbonatos (dejando 0.5 meq/L libres) sin desequilibrar la formulación nutricional. (1)-1-50.pdf]"
+      },
+      {
+        "condicion": "Si se configuran los tanques de solución madre concentrada en un cabezal de riego estándar (Tanques A y B) (1)-1-50.pdf]",
+        "consecuencia_biologica": "Riesgo crítico de formación de precipitados insolubles (yeso o fosfatos cálcicos) que obturan las electroválvulas y goteros si se mezclan iones incompatibles. (1)-1-50.pdf]",
+        "accion_ingenieril": "Aislar estrictamente el Nitrato de Calcio en un tanque, evitando mezclarlo con cualquier sal que aporte iones sulfato o fosfato, los cuales irán en el otro tanque. (1)-1-50.pdf]"
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Urrestarazu Gavilán, M. (2015). Manual práctico del cultivo sin suelo e hidroponía. Ediciones Mundi-Prensa. Capítulo 2 (Morfología de contenedores) y Capítulo 3 (La solución de fertirrigación). (1)-1-50.pdf]"
+    ]
+  },
+  {
+    "dominio_academico": "Interacción Fenológica, Microclima y Demanda de Fertirriego (Hidroponía)",
+    "conceptos_clave": [
+      {
+        "termino": "Ley de la Restitución y Demanda Potencial",
+        "definicion_uach": "Principio agronómico que establece suministrar a la planta las proporciones exactas de agua y nutrientes que demanda para su estado óptimo. En cultivos de alto rendimiento, la demanda fisiológica natural no siempre coincide con los fines comerciales del productor. (1)-51-100.pdf]",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Fines productivos",
+          "Desarrollo vegetativo vs generativo",
+          "Necesidades hídricas"
+        ],
+        "aplicacion_practica": "Desviación intencionada de la nutrición óptima vegetativa para forzar características comerciales específicas, como aplicar estrés para priorizar el desarrollo de los frutos. (1)-51-100.pdf]"
+      },
+      {
+        "termino": "Acoplamiento Microclima-Demanda Nutricional",
+        "definicion_uach": "Relación física directa entre las características estructurales del invernadero (ventilación cenital, orientación, transmisión de luz) y la magnitud de absorción de agua y sales nutritivas por el cultivo. (1)-51-100.pdf]",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Radiación solar",
+          "Tasa transpiratoria",
+          "Conductividad Eléctrica de la unidad de cultivo"
+        ],
+        "aplicacion_practica": "Cálculo diferencial de dotaciones de riego; prohíbe el uso de un programa de fertirriego estándar en una región para todos los invernaderos sin considerar sus capacidades de control climático. (1)-51-100.pdf]"
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si el cultivo se encuentra en un invernadero con excelentes condiciones microclimáticas (alta radiación, buena orientación y ventilación cenital) y se le aplica el mismo programa de riego que a un invernadero deficiente (1)-51-100.pdf]",
+        "consecuencia_biologica": "La planta sufre un déficit agudo de agua y nutrientes debido a su altísima demanda transpiratoria, provocando que la zona de mejor clima presente, paradójicamente, la menor producción. (1)-51-100.pdf]",
+        "accion_ingenieril": "Incrementar sustancialmente la dotación (volumen) y frecuencia de la fertirrigación para acoplar la oferta de la solución nutritiva a la elevada demanda fisiológica impulsada por el microclima. (1)-51-100.pdf]"
+      },
+      {
+        "condicion": "Si los fines productivos del agricultor (ej. buscar firmeza, color o acumulación de azúcares) difieren de la tendencia de desarrollo vegetativo óptimo del cultivo (1)-51-100.pdf]",
+        "consecuencia_biologica": "Aplicar estrictamente la 'ley de restitución' resultaría en un exceso de biomasa foliar en detrimento de la calidad organoléptica y el valor comercial de la cosecha. (1)-51-100.pdf]",
+        "accion_ingenieril": "Separar la estrategia de fertirriego de la demanda hídrica basal y aplicar un manejo prescriptivo de estrés (manipulando la CE de consigna y el porcentaje de drenaje) para direccionar el desarrollo hacia el fruto. (1)-51-100.pdf]"
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Urrestarazu Gavilán, M. (2015). Manual práctico del cultivo sin suelo e hidroponía. Ediciones Mundi-Prensa. Capítulo 3.6 (Manejo de la solución) y Capítulo 4 (Técnicas de fertirrigación y microclima). (1)-51-100.pdf]"
+    ]
+  },
+  {
+    "dominio_academico": "Fisiología Vegetal, Fenología y Terminología Hidropónica (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Fenología del Cultivo (Fases Vegetativa vs. Reproductiva)",
+        "definicion_uach": "Ciclo biológico dividido para la optimización del fertirriego. El manejo nutricional difiere drásticamente entre la fase vegetativa (estructura) y la reproductiva/fructificación (calidad de fruto). (2)-1-41.pdf]",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Tasa de transpiración",
+          "Demanda nutricional",
+          "Índice de cosecha"
+        ],
+        "aplicacion_practica": "Ajuste de la solución nutritiva y del volumen de riego según la etapa de desarrollo de la planta, evitando excesos de nitrógeno en fases finales de llenado. (2)-1-41.pdf]"
+      },
+      {
+        "termino": "Riego de Salvaguarda",
+        "definicion_uach": "Protocolo de fertirrigación de emergencia activado ante fallos en los sistemas automatizados para evitar la desecación irreversible del sustrato y la muerte del sistema radical. (2)-1-41.pdf]",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Disponibilidad hídrica",
+          "Seguridad del cultivo",
+          "Fallos del programador"
+        ],
+        "aplicacion_practica": "Implementación de una consigna de protección en el software de riego para asegurar la supervivencia mínima ante imprevistos técnicos. (2)-1-41.pdf]"
+      },
+      {
+        "termino": "Capacidad de Intercambio Catiónico en Sustratos (CIC)",
+        "definicion_uach": "Propiedad del sustrato (especialmente en orgánicos) que le permite retener cationes. Sustratos con alta CIC actúan como amortiguadores químicos ante cambios en la solución nutritiva. (2)-1-41.pdf]",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Cationes absorbidos",
+          "pH de la rizosfera",
+          "Fertilización"
+        ],
+        "aplicacion_practica": "Selección del sustrato para sistemas de fertirriego: una alta CIC permite mayor estabilidad ante errores de inyección, pero requiere un lavado previo para evitar desequilibrios iniciales. (2)-1-41.pdf]"
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si el cultivo está en fase de maduración y alta irradiación (2)-1-41.pdf]",
+        "consecuencia_biologica": "Predomina la absorción de Potasio (K) sobre Nitrógeno (NO3-), lo que provoca una tendencia natural a la acidificación del pH de la rizosfera. (2)-1-41.pdf]",
+        "accion_ingenieril": "Elevar el pH de la solución de entrada (incluso eliminando la adición de ácido si es necesario) para compensar la bajada de pH inducida por la absorción selectiva de la planta. (2)-1-41.pdf]"
+      },
+      {
+        "condicion": "Si se detecta que el sistema de riego no ha funcionado por un periodo crítico de horas (2)-1-41.pdf]",
+        "consecuencia_biologica": "Pérdida de la capacidad de rehidratación del sustrato (especialmente en turba/fibra) y muerte radicular. (2)-1-41.pdf]",
+        "accion_ingenieril": "Activar inmediatamente el 'Riego de salvaguarda' con dotaciones mínimas para restablecer la conexión hídrica, incluso si no es el horario programado. (2)-1-41.pdf]"
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Urrestarazu Gavilán, M. (2015). Manual práctico del cultivo sin suelo e hidroponía. Capítulos 2 y 4: Terminología y técnicas de fertirriego según el estadio fenológico. (2)-1-41.pdf]"
+    ]
+  },
+  {
+    "dominio_academico": "Terminología Técnica y Estandarización de Unidades (Hidroponía)",
+    "conceptos_clave": [
+      {
+        "termino": "Sistema Métrico y Prefijos de Conversión",
+        "definicion_uach": "Estandarización de unidades de medida utilizada para evitar errores de cálculo en la preparación de soluciones nutritivas, desde el nivel de 'tera-' hasta 'atto-'. (2)-42-82.pdf]",
+        "ecuacion": "1 m (mili) = 10^-3; 1 μ (micro) = 10^-6; 1 n (nano) = 10^-9",
+        "variables_relacionadas": [
+          "Conversión de concentraciones",
+          "Escala de fertilizantes",
+          "Dosificación"
+        ],
+        "aplicacion_practica": "Conversión precisa entre las unidades del análisis químico del agua (ppm, mg/L) y las unidades de formulación del fertirriego (mmol/L, meq/L). (2)-42-82.pdf]"
+      },
+      {
+        "termino": "Glosario Técnico de Riego",
+        "definicion_uach": "Definición estandarizada de términos operativos como 'Salinización', 'Riego de salvaguarda', 'Rizosfera' y 'Sustrato'. (2)-42-82.pdf]",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Manejo de drenajes",
+          "Seguridad del cultivo",
+          "Sistemas abiertos/cerrados"
+        ],
+        "aplicacion_practica": "Establecimiento de un lenguaje técnico unificado para la programación de los controladores de fertirrigación y la comunicación entre operarios. (2)-42-82.pdf]"
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se detecta un error de unidad entre la expresión de resultados del laboratorio (ppm) y la calculadora de fertirriego (meq/L) (2)-42-82.pdf]",
+        "consecuencia_biologica": "Suministro incorrecto de iones, causando deficiencias o toxicidad por desequilibrio iónico severo. (2)-42-82.pdf]",
+        "accion_ingenieril": "Aplicar estrictamente la Tabla A.2 de conversión, utilizando los factores de valencia para la conversión iónica antes de ingresar los datos al programador. (2)-42-82.pdf]"
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Urrestarazu Gavilán, M. (2015). Manual práctico del cultivo sin suelo e hidroponía. Apéndice: Factores de conversión y glosario técnico. (2)-42-82.pdf]"
+    ]
+  },
+  {
+    "dominio_academico": "Manejo Ambiental y Sistemas de Tutorado del Jitomate en Invernadero",
+    "conceptos_clave": [
+      {
+        "termino": "Transmisión y Reflexión Lumínica en Alta Densidad",
+        "definicion_uach": "Estrategia física para maximizar el aprovechamiento de la luz blanca y la actividad fotosintética en el dosel del cultivo mediante el uso de cubiertas transparentes y superficies altamente reflectoras.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Polietileno transparente (70% transmisión)",
+          "Acolchado plateado o blanco mate",
+          "Cubierta de suelo (ground cover) blanca"
+        ],
+        "aplicacion_practica": "Diseño de cubiertas e interiores de invernaderos en zonas con alta nubosidad o densidades de población elevadas para evitar el sombreado mutuo."
+      },
+      {
+        "termino": "Sistemas de Conducción y Tutorado Intensivo",
+        "definicion_uach": "Soporte físico vertical y manejo arquitectónico de la planta de jitomate mediante rafia suave y anillos plásticos para evitar el encamado, optimizando la ventilación y el espacio.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Tutorado en espiral (cada 3 hojas)",
+          "Bajado de la planta (conducción >10 racimos)",
+          "Tensores de alambre"
+        ],
+        "aplicacion_practica": "Manejo del crecimiento indeterminado del jitomate para permitir ciclos largos de producción y facilitar las labores de cosecha."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se cultiva jitomate en invernaderos comerciales en México buscando una relación óptima de costo y transmisión de luz",
+        "consecuencia_biologica": "La falta de radiación neta limita la tasa fotosintética del jitomate, pero las cubiertas de cristal resultan económicamente inviables.",
+        "accion_ingenieril": "Instalar cubiertas de polietileno transparente (que garantizan un 70% de transmisión lumínica) y pintar de blanco la estructura del invernadero para incrementar la reflexión."
+      },
+      {
+        "condicion": "Si las plantas de jitomate alcanzan el desarrollo de seis hojas verdaderas y antes de que comiencen a doblarse por su propio peso",
+        "consecuencia_biologica": "Riesgo de estrangulamiento del tallo principal o quiebre por falta de soporte estructural.",
+        "accion_ingenieril": "Iniciar el amarrado con rafia suave utilizando nudos no corredizos en la base de la planta y guiar el tallo colocándolo en espiral cada tres hojas."
+      },
+      {
+        "condicion": "Si se planifica la conducción del jitomate para un ciclo largo de producción que exceda los diez racimos florales",
+        "consecuencia_biologica": "El crecimiento indeterminado supera la altura máxima del alambre de soporte superior del invernadero.",
+        "accion_ingenieril": "Emplear hilos de rafia de mayor longitud combinados con anillos plásticos e implementar la técnica de bajado de la planta conforme se vayan cosechando los racimos inferiores."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Sánchez del Castillo, F. (2013). Manual de Producción de Jitomate en Invernadero. Capítulo: Condiciones ambientales en el invernadero e Higiene y Conducción del cultivo."
+    ]
+  },
+  {
+    "dominio_academico": "Ingeniería Ambiental y Fisiología del Jitomate en Invernadero",
+    "conceptos_clave": [
+      {
+        "termino": "Intervalo Optimo de Temperatura para Jitomate",
+        "definicion_uach": "Rango térmico crítico que gobierna la velocidad de los procesos metabólicos. Fuera de estos límites se detiene el crecimiento o se abortan los órganos reproductivos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Temperatura diurna óptima (22 - 26 °C)",
+          "Temperatura nocturna óptima (13 - 16 °C)",
+          "Punto de congelación (0 °C)",
+          "Umbral de daño por calor (>35 °C)"
+        ],
+        "aplicacion_practica": "Programación de los sistemas de automatización climática (calefacción y ventilación automatizada) para mantener la planta en su ventana de máxima eficiencia fotosintética."
+      },
+      {
+        "termino": "Humedad Relativa y Viabilidad del Polen",
+        "definicion_uach": "Parámetro ambiental que regula la transpiración de la planta y la consistencia física del polen para la polinización.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Humedad Relativa Óptima (50 - 60%)",
+          "Deshidratación del polen (<50% HR)",
+          "Compactación o apelmazamiento del polen (>70% HR)"
+        ],
+        "aplicacion_practica": "Activación de sistemas de nebulización (fogging) o extractores de humedad en el software de control según el bloque horario para asegurar el cuajado de frutos."
+      },
+      {
+        "termino": "Manejo de la Densidad lumínica Estacional",
+        "definicion_uach": "Estrategia de compensación fotosintética basada en la modificación de la densidad de población de plantas por metro cuadrado según la temporada de radiación incidente.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Densidad invernal (2.5 a 3 plantas/m^2)",
+          "Densidad primaveral-estival (3.5 plantas/m^2)",
+          "Índice de Área Foliar (IAF)"
+        ],
+        "aplicacion_practica": "Planificación de siembras hortícolas protegidas en México; se reduce la densidad en épocas de alta nubosidad para evitar el sombreado mutuo y la baja calidad de fruto."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la temperatura nocturna dentro del invernadero desciende de los 10 °C o la temperatura diurna supera los 30 °C prolongadamente",
+        "consecuencia_biologica": "Se altera la viabilidad del polen, provocando el aborto masivo de flores y una caída drástica en el cuajado de frutos.",
+        "accion_ingenieril": "Configurar alarmas operativas en el controlador para activar la calefacción automatizada por debajo de 13 °C o abrir ventanas cenitales y activar pantallas de sombreado por encima de 26 °C."
+      },
+      {
+        "condicion": "Si la Humedad Relativa dentro del invernadero supera el 70% durante las horas de polinización activa",
+        "consecuencia_biologica": "El polen se humedece y se apelmaza, impidiendo su liberación de las anteras y causando fallas severas en la fecundación.",
+        "accion_ingenieril": "Encender los ventiladores de circulación interna y abrir las ventanas laterales/cenitales para forzar la renovación del aire y bajar la HR al rango óptimo (50-60%)."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Sánchez del Castillo, F. (2013). Manual de Producción de Jitomate en Invernadero. Capítulo: Requerimientos ambientales del cultivo de jitomate."
+    ]
+  },
+  {
+    "dominio_academico": "Calidad, Características Químicas y Acondicionamiento del Agua de Riego para Jitomate",
+    "conceptos_clave": [
+      {
+        "termino": "Conductividad Eléctrica Basal del Agua (CE_a)",
+        "definicion_uach": "Medida del contenido total de sales disueltas en el agua de partida antes de la adición de fertilizantes. Clasifica la aptitud del recurso hídrico e influye directamente en el cálculo de la fracción de lavado.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Agua excelente a buena (<0.5 dS/m a 0.75 dS/m)",
+          "Agua de calidad condicionada (0.75 - 2.0 dS/m)",
+          "Agua no recomendable (>2.0 dS/m)",
+          "Presión osmótica radicular"
+        ],
+        "aplicacion_practica": "Establecimiento del punto de partida físico-químico; si el agua de pozo base excede 0.75 dS/m, se reduce el margen de conductividad disponible para los abonos comerciales (CE de aporte) con el fin de evitar mermas productivas severas."
+      },
+      {
+        "termino": "Relación de Adsorción de Sodio (RAS)",
+        "definicion_uach": "Índice que evalúa el riesgo físico de degradación de la estructura del sustrato o suelo y el peligro de toxicidad específica por acumulación de iones Sodio (Na+) en relación con las concentraciones de Calcio (Ca2+) y Magnesio (Mg2+).",
+        "ecuacion": "RAS = \\frac{[Na^+]}{\\sqrt{\\frac{[Ca^{2+}] + [Mg^{2+}]}{2}}}",
+        "variables_relacionadas": [
+          "RAS óptimo (<3.0)",
+          "RAS condicionado o de cuidado (3.0 - 9.0)",
+          "RAS peligroso/inaceptable (>9.0)"
+        ],
+        "aplicacion_practica": "Diagnóstico y control químico del agua de riego. Si el cálculo de RAS resulta superior a 3.0, el software de control debe programar inyecciones adicionales de Yeso (Sulfato de Calcio) o Nitrato de Calcio para desplazar el Sodio y proteger el sistema radicular."
+      },
+      {
+        "termino": "Riesgo de Fitotoxicidad por Cloruros (Cl-)",
+        "definicion_uach": "Concentración umbral del anión Cloro por encima de la cual el jitomate experimenta quemaduras marginales en hojas viejas, necrosis foliar y reducción de la fotosíntesis neta.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Concentración óptima-segura (<142 mg/L o <4.0 meq/L)",
+          "Rango de restricción moderada (142 - 355 mg/L)",
+          "Nivel severo/tóxico (>355 mg/L o >10 meq/L)"
+        ],
+        "aplicacion_practica": "Restricción absoluta de fuentes comerciales. Si el análisis del agua reporta niveles basales de Cl- en rangos moderados o altos, se prohíbe el uso de Cloruro de Potasio (KCl) o Cloruro de Calcio (CaCl2) en las soluciones madre, sustituyéndolos por Sulfatos o Nitratos."
+      },
+      {
+        "termino": "Conversión Analítica de Unidades de Laboratorio",
+        "definicion_uach": "Metodología estandarizada para transformar los reportes analíticos de masa (partes por millón, ppm o mg/L) a unidades de balance de cargas electroquímicas (miliequivalentes por litro, meq/L), usando el peso equivalente de cada ión.",
+        "ecuacion": "\\text{meq/L} = \\frac{\\text{mg/L (ppm)}}{\\text{Peso Equivalente}} \\quad \\text{donde } \\text{Peso Equivalente} = \\frac{\\text{Peso Molecular o Atómico}}{\\text{Valencia}}",
+        "variables_relacionadas": [
+          "Factores de conversión iónica (Ca2+: 20.04, Mg2+: 12.16)",
+          "Factores de conversión aniónica (HCO3-: 61.02, SO4^2-: 48.03)",
+          "Equilibrio cationes-aniones"
+        ],
+        "aplicacion_practica": "Algoritmo de entrada de datos; el script de formulación automatizada debe convertir obligatoriamente los mg/L del reporte del laboratorio a meq/L para poder realizar el balance iónico de la solución final."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si el agua de riego base reporta una Conductividad Eléctrica (CE_a) mayor a 0.75 dS/m pero menor a 2.0 dS/m",
+        "consecuencia_biologica": "Incremento de la presión osmótica en la rizosfera que dificulta la absorción libre de agua, induciendo un riesgo de estrés hídrico y acumulación salina.",
+        "accion_ingenieril": "Incrementar la fracción de lavado (drenaje) entre un 15% y un 30% en cada evento de riego y reducir la concentración de fertilizantes de aporte (solución madre) para mantener la CE de la rizosfera dentro de los límites del jitomate."
+      },
+      {
+        "condicion": "Si el análisis químico del agua arroja un índice RAS superior a 3.0",
+        "consecuencia_biologica": "Riesgo inminente de dispersión de arcillas, pérdida de porosidad en sustratos activos, antagonismo competitivo con el Calcio y compactación de la zona radicular.",
+        "accion_ingenieril": "Aumentar la dosificación de fuentes de Calcio soluble (Nitrato de Calcio) en el tanque concentrado para incrementar la concentración de Ca2+ en el denominador de la ecuación y reducir artificialmente el RAS a niveles seguros (<3.0)."
+      },
+      {
+        "condicion": "Si el análisis del agua reporta concentraciones de Bicarbonatos (HCO3-) superiores a 1.5 meq/L (91.5 mg/L)",
+        "consecuencia_biologica": "Elevación extrema del pH del agua (alcalinidad), provocando la insolubilización y precipitación de microelementos esenciales (principalmente Hierro, Manganeso y Zinc).",
+        "accion_ingenieril": "Calcular e inyectar al flujo de riego la masa exacta de Ácido Nítrico o Fosfórico necesaria para destruir los bicarbonatos excedentes, manteniendo estrictamente un umbral de seguridad residual de 0.5 meq/L para amortiguar fluctuaciones."
+      },
+      {
+        "condicion": "Si la concentración basal de Cloruros (Cl-) en el agua supera los 142 mg/L (4.0 meq/L)",
+        "consecuencia_biologica": "Toxicidad iónica específica en el jitomate, manifestada en clorosis marginal, defoliación prematura y reducción del tamaño del fruto.",
+        "accion_ingenieril": "Eliminar por completo el uso de fertilizantes clorados del cabezal de fertirriego, compensar incrementando la concentración de Nitratos (NO3-) para aprovechar el antagonismo aniónico e inhibir la absorción foliar de Cl-."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Sánchez del Castillo, F. (2013). Manual de Producción de Jitomate en Invernadero. Capítulo: Calidad del agua para riego.",
+      "Reporte Analítico de Laboratorio de Aguas. Cuadro 1 y Cuadro 2: Determinaciones analíticas y factores de conversión iónica."
+    ]
+  },
+  {
+    "dominio_academico": "Fisiología de la Nutrición Mineral y Dinámica de Iones en Jitomate (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Funciones Fisiológicas de Macronutrientes en Jitomate",
+        "definicion_uach": "Elementos requeridos en altas concentraciones (mg/L o meq/L) que constituyen la estructura celular, actúan como osmorreguladores y gobiernan los balances energéticos del jitomate.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Nitrógeno (N): Componente de aminoácidos, proteínas y clorofila; rige el vigor vegetativo y el crecimiento foliar.",
+          "Fósforo (P): Componente de ácidos nucleicos (ADN, ARN) y ATP; fundamental para la división celular, desarrollo radicular inicial y amarre de flores.",
+          "Potasio (K): Activador enzimático y osmorregulador primario; controla la apertura estomática, translocación de azúcares y determina el calibre, color y grados Brix del fruto.",
+          "Calcio (Ca): Componente estructural de la pared celular (pectato de calcio); esencial para la estabilidad de las membranas y firmeza del fruto.",
+          "Magnesio (Mg): Átomo central de la molécula de clorofila y activador de sistemas enzimáticos asociados a la fotosíntesis.",
+          "Azufre (S): Constituyente de aminoácidos esenciales (cisteína, metionina) y coenzimas necesarias para la síntesis de proteínas."
+        ],
+        "aplicacion_practica": "Diseño de curvas de absorción estacionales; balancear las fuentes de macronutrientes para transicionar de fases puramente vegetativas a fases reproductivas de alta demanda de Potasio."
+      },
+      {
+        "termino": "Funciones Fisiológicas de Micronutrientes en Jitomate",
+        "definicion_uach": "Elementos catalíticos requeridos en concentraciones traza (µmol/L o mg/L) que actúan principalmente como cofactores enzimáticos esenciales en procesos redox y metabólicos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Hierro (Fe): Catalizador en la síntesis de clorofila, componente de citocromos y transferidor de electrones en la respiración y fotosíntesis.",
+          "Manganeso (Mn): Participa directamente en la fotólisis del agua (Fotosistema II) y activa enzimas del metabolismo del nitrógeno.",
+          "Boro (B): Regula el metabolismo de carbohidratos, la síntesis de paredes celulares y es crítico para la germinación del tubo polínico y cuajado del fruto.",
+          "Zinc (Zn): Esencial para la síntesis de triptófano (precursor de la auxina ácido indolacético), regulando el elongamiento celular y crecimiento de brotes.",
+          "Cobre (Cu): Componente de la plastocianina (transporte de electrones fotosintético) y cofactor de oxidasas implicadas en la síntesis de lignina.",
+          "Molibdeno (Mo): Componente estructural de las enzimas nitrato reductasa y nitrogenasa, indispensable para la asimilación del nitrógeno nítrico."
+        ],
+        "aplicacion_practica": "Inyección constante en el tercer inyector (Tanque de microelementos) usando quelatos estables (EDTA, DTPA) para evitar clorosis intervenerales y fallas en la polinización."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se presenta un exceso severo de Nitrógeno (N) en la solución nutritiva durante la etapa de fructificación del jitomate",
+        "consecuencia_biologica": "Se desequilibra y bloquea la disponibilidad y absorción de Potasio (K) y Fósforo (P), provocando un retraso en la maduración, frutos blandos y un crecimiento puramente vegetativo/vicioso.",
+        "accion_ingenieril": "Disminuir drásticamente la aportación de fuentes nítricas o amónicas del cabezal, ajustar la relación N:K a valores de 1:2 o 1:2.5, y compensar el balance aniónico incrementando los Sulfatos."
+      },
+      {
+        "condicion": "Si la tasa de transpiración disminuye por alta humedad relativa o se presenta un antagonismo competitivo por excesos de Potasio (K+) o Magnesio (Mg2+) en la rizosfera (2)-1-41.pdf, manual_produccion_tomate.pdf]",
+        "consecuencia_biologica": "Se inhibe la absorción y transporte apical del Calcio (Ca2+), destruyendo las membranas celulares en el ápice del fruto en desarrollo, manifestando necrosis apical ('pudrición de la base' o Blossom-End Rot). (2)-1-41.pdf, manual_produccion_tomate.pdf]",
+        "accion_ingenieril": "Reducir la concentración de K+ y Mg2+ en la disolución de entrada si están por encima del óptimo, mantener la conductividad eléctrica controlada para facilitar el flujo de agua, y asegurar un manejo climático que estimule la transpiración. (1)-51-100.pdf, manual_produccion_tomate.pdf]"
+      },
+      {
+        "condicion": "Si el pH en el drenaje o extracto de la rizosfera aumenta de forma persistente por encima de 6.5 (1)-1-50.pdf]",
+        "consecuencia_biologica": "Precipitación química e insolubilización de los microelementos metálicos (especialmente Hierro, Manganeso y Zinc), induciendo clorosis férrica severa en hojas jóvenes. (1)-1-50.pdf]",
+        "accion_ingenieril": "Aumentar la dosificación de ácido (Nítrico o Fosfórico) en el tanque inyector para corregir el pH en el gotero a un rango de 5.5 a 5.8, y sustituir las fuentes de hierro convencionales por agentes quelantes de mayor estabilidad como el DTPA o EDDHA. (1)-1-50.pdf, manual_produccion_tomate.pdf]"
+      },
+      {
+        "condicion": "Si el cultivo de jitomate entra en la fase de floración activa y se busca asegurar el máximo cuajado y viabilidad del tubo polínico",
+        "consecuencia_biologica": "Una deficiencia oculta de Boro o Zinc detiene el crecimiento meristemático y provoca el aborto floral o deformación de frutos.",
+        "accion_ingenieril": "Monitorear y mantener estrictamente el nivel de Boro a 0.5 mg/L y Zinc a 0.5 mg/L en la solución final inyectada, evitando variaciones bruscas de pH que comprometan su asimilación."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Sánchez del Castillo, F. (2013). Manual de Production de Jitomate en Invernadero. Capítulo: Nutrimentos y soluciones nutritivas.",
+      "Manual de Producción de Tomate. Sección 9.8: Deficiencias nutrimentales y su corrección."
+    ]
+  },
+  {
+    "dominio_academico": "Física de Sustratos, Preparación de Mezclas y Desinfección para Jitomate",
+    "conceptos_clave": [
+      {
+        "termino": "Capacidad de Retención de Agua vs. Porosidad de Aireación",
+        "definicion_uach": "Balance hidrodinámico entre los microporos (que retienen agua por capilaridad) y los macroporos ( que drenan libremente permitiendo la difusión de oxígeno a las raíces). Un desequilibrio causa anoxia radicular o estrés hídrico. (1).pdf, jitoma_invernadero.pdf]",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Porosidad total óptima (>80% en volumen) (1).pdf]",
+          "Capacidad de aireación (20% - 40%) (1).pdf]",
+          "Granulometría y distribución de partículas (1)-1-50.pdf]"
+        ],
+        "aplicacion_practica": "Diseño de mezclas físicas; si se utiliza un material muy retentivo como la turba, se debe mezclar obligatoriamente con un material grueso (perlita o tezontle cribado) para abrir macroporos y asegurar la oxigenación de la rizosfera del jitomate. (1).pdf, jitoma_invernadero.pdf]"
+      },
+      {
+        "termino": "Sustratos de Color Blanquecino o Reflector",
+        "definicion_uach": "Uso de materiales sólidos superficiales con un alto índice de albedo para potenciar la dispersión de la luz difusa hacia el dosel inferior del cultivo de jitomate.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Granzón o cuarzo blanquecino",
+          "Reflexión lumínica basal",
+          "Temperatura del contenedor"
+        ],
+        "aplicacion_practica": "Capa de cobertura; colocar sustratos claros en la superficie o pasillos para incrementar la radiación útil interceptada por las hojas inferiores del jitomate en condiciones de alta densidad."
+      },
+      {
+        "termino": "Solarización y Desinfección Química de Sustratos",
+        "definicion_uach": "Protocolo físico-químico obligatorio aplicado a sustratos locales o reutilizados para eliminar propágulos de patógenos del suelo (ej. Fusarium, Phytophthora, Nematodos) antes del trasplante.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Temperatura crítica por solarización (>50 °C constantes)",
+          "Humedad de saturación del sustrato",
+          "Tiempo de exposición"
+        ],
+        "aplicacion_practica": "Sanidad del cultivo; humedecer el sustrato a capacidad de campo, cubrir herméticamente con película de polietileno transparente calibre 100-200 durante el verano, o aplicar agentes químicos permitidos si los ciclos biológicos exigen inmediatez."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se formula una mezcla de sustrato basada en materiales orgánicos compactables (como turba o fibra de coco fina) para ciclos largos de jitomate (1).pdf, jitoma_invernadero.pdf]",
+        "consecuencia_biologica": "Degradación física y molienda natural de partículas por riego continuo, provocando la pérdida de macroporos, encharcamiento, anoxia radical y pudrición de raíces. (1).pdf]",
+        "accion_ingenieril": "Incorporar entre un 30% y un 50% de material inerte mineral con granulometría estable entre 2 y 5 mm (como perlita, piedra pómez o tezontle), garantizando que la capacidad de aireación no caiga por debajo del 20% durante todo el ciclo. (1).pdf, jitoma_invernadero.pdf]"
+      },
+      {
+        "condicion": "Si se decide reutilizar un sustrato inerte o local de un ciclo anterior de solanáceas",
+        "consecuencia_biologica": "Altísima probabilidad de transmisión e infestación por esporas latentes de hongos fitopatógenos o nematodos que diezmarán el nuevo trasplante.",
+        "accion_ingenieril": "Someter el medio a un lavado profundo con agua ácida para remover sales acumuladas, seguido de un proceso de solarización plástica por un mínimo de 30-45 días o aplicar una solución desinfectante autorizada antes de introducir las plántulas."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Sánchez del Castillo, F. (2013). Manual de Producción de Jitomate en Invernadero. Capítulo: Sustratos y preparación de camas de cultivo.",
+      "Urrestarazu Gavilán, M. (2015). Manual práctico del cultivo sin suelo e hidroponía. Capítulo 2: Propiedades físicas y manejo de sustratos hortícolas. (1).pdf]"
+    ]
+  },
+  {
+    "dominio_academico": "Fisiología y Tecnología del Semillero y Producción de Plántulas de Jitomate",
+    "conceptos_clave": [
+      {
+        "termino": "Criterios de Selección y Arquitectura de Bandejas de Germinación",
+        "definicion_uach": "Determinación del volumen y densidad de cavidades por charola plástica o de poliestireno para equilibrar el espacio del invernadero con el volumen radical necesario para un trasplante vigoroso.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Bandejas de 200 cavidades (Costo/espacio óptimo)",
+          "Bandejas de 128 cavidades (Mayor volumen radicular, ciclos largos)",
+          "Volumen de sustrato por alveolo"
+        ],
+        "aplicacion_practica": "Diseño de la densidad en semilleros; el uso de charolas de 200 cavidades es el estándar comercial en México para optimizar el área de germinación, requiriendo sustratos de granulometría fina y uniforme como la turba comercial (peat moss)."
+      },
+      {
+        "termino": "Manejo Termo-Lumínico de la Germinación y Emergencia",
+        "definicion_uach": "Control estricto de las condiciones ambientales basales requeridas para romper la latencia de la semilla e iniciar la emergencia uniforme del hipocótilo sin causar etiolación.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Temperatura óptima de germinación (25 °C constantes)",
+          "Fase de oscuridad total (Siembra a emergencia)",
+          "Humedad relativa en cámara de germinación (>90%)"
+        ],
+        "aplicacion_practica": "Automatización del semillero; las charolas sembradas se estiban y cubren con plástico negro en una cámara oscura a 25 °C. Inmediatamente al emerger las primeras plántulas (fase de 'gancho'), se deben trasladar a los túneles o mesas con máxima iluminación para activar la fotosíntesis."
+      },
+      {
+        "termino": "Índices de Calidad Morfológica para el Trasplante",
+        "definicion_uach": "Establecimiento de las constantes biométricas y fenológicas que debe cumplir la plántula de jitomate para garantizar una alta tasa de supervivencia y nulo estrés post-trasplante.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Edad cronológica (25 a 35 días post-siembra)",
+          "Desarrollo foliar (4 a 5 hojas verdaderas)",
+          "Altura de plántula (12 a 15 cm)",
+          "Sanidad y grosor del tallo (>4 mm)"
+        ],
+        "aplicacion_practica": "Control de calidad en la línea de producción; rechazar lotes de plántulas que superen los 35 días o muestren botones florales prematuros en la charola, ya que esto induce un envejecimiento radical irreversible."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si las semillas de jitomate son sembradas en las charolas y entran en la fase de incubación previa a la emergencia",
+        "consecuencia_biologica": "La imbibición de la semilla y la activación enzimática celular requieren condiciones hidrotérmicas constantes; variaciones térmicas drásticas detienen el proceso o provocan germinación heterogénea.",
+        "accion_ingenieril": "Mantener las bandejas bajo oscuridad total y a una temperatura controlada de 25 °C, monitoreando cada 12 horas para retirar el plástico negro al primer indicio visual de emergencia."
+      },
+      {
+        "condicion": "Si las plántulas han emergido pero se mantienen bajo condiciones de sombreado o baja radiación solar en el semillero",
+        "consecuencia_biologica": "Etiolación severa (hilado de plántulas) caracterizada por tallos delgados, entrenudos excesivamente largos y alta susceptibilidad al vuelco y al ataque de *Damping-off* (Phytium/Rhizoctonia).",
+        "accion_ingenieril": "Retirar cualquier malla de sombreado del semillero durante las horas de fotoperiodo, asegurar niveles altos de luz difusa y aplicar riegos con una solución nutritiva diluida (al 25-50% de la conductividad final) para fortalecer mecánicamente los tejidos celulares."
+      },
+      {
+        "condicion": "Si la plántula de jitomate alcanza una ventana fenológica de 25 a 35 días con 4 a 5 hojas verdaderas y una altura de 12 a 15 cm",
+        "consecuencia_biologica": "El sistema radicular ha colonizado completamente el alveolo de la charola, alcanzando el equilibrio óptimo entre reservas de carbono y capacidad de absorción hídrica.",
+        "accion_ingenieril": "Programar de inmediato el trasplante definitivo a las camas o contenedores del invernadero; suspender el riego 12 horas antes para facilitar la extracción del cepellón entero sin desmoronarlo."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Sánchez del Castillo, F. (2013). Manual de Producción de Jitomate en Invernadero. Capítulo: Producción de plántula en semillero."
+    ]
+  },
+  {
+    "dominio_academico": "Ingeniería del Establecimiento, Arquitectura Cinética y Manejo del Cultivo de Jitomate",
+    "conceptos_clave": [
+      {
+        "termino": "Densidad de Población y Arreglo Espacial en Camas",
+        "definicion_uach": "Configuración geométrica del número de plantas establecidas por unidad de superficie dentro del invernadero para maximizar la intercepción lumínica y optimizar el flujo de aire.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Ancho de camas de cultivo (0.9 a 1.0 m)",
+          "Ancho de pasillos o andadores (0.5 a 0.6 m)",
+          "Arreglo en doble hilera (tresbolillo o marco real)",
+          "Densidad comercial (2 a 3.5 plantas/m²)"
+        ],
+        "aplicacion_practica": "Cálculo de infraestructura de plantación; el diseño estándar en México contempla camas de 1.0 m separadas por pasillos de 0.6 m, plantando en doble hilera con un distanciamiento de 30 a 40 cm entre plantas para alcanzar el óptimo poblacional según la estación."
+      },
+      {
+        "termino": "Poda de Brotes Axilares (Desbrotado o Deschuponado)",
+        "definicion_uach": "Práctica cultural sistemática que consiste en la remoción mecánica de las yemas laterales o axilares tan pronto emergen, con el fin de mantener el crecimiento unifoliar hacia un solo eje principal (tallo dominante).",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Brotes axilares o 'chupones'",
+          "Frecuencia operativa (cada 7 a 10 días)",
+          "Dominancia apical"
+        ],
+        "aplicacion_practica": "Manejo del vigor; los operarios deben retirar manualmente los brotes axilares cuando miden menos de 5 cm para evitar heridas grandes que sirvan de entrada a patógenos (como Botrytis o bacterias), canalizando toda la energía fotosintética al llenado de los frutos del tallo principal."
+      },
+      {
+        "termino": "Defoliación Sanitaria y Fisiológica (Poda de Hojas inferior)",
+        "definicion_uach": "Eliminación estratégica e irreversible de las hojas de la sección basal del tallo que han entrado en senescencia, superado su punto de compensación lumínica o muestran síntomas de enfermedades.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Hojas senescentes o parásitas",
+          "Ventilación de la falda del cultivo",
+          "Humedad relativa local"
+        ],
+        "aplicacion_practica": "Control fitosanitario y climático; se eliminan gradualmente las hojas por debajo del último racimo cosechado. Esto elimina órganos que consumen más energía de la que producen, reduce la humedad relativa en la base de la planta e interrumpe el ciclo biológico de plagas como los minadores o la mosca blanca."
+      },
+      {
+        "termino": "Raleo o Poda de Frutos en Racimo",
+        "definicion_uach": "Remoción selectiva de frutos deformes, pequeños o excedentes en un mismo racimo floral para regular la relación fuente-demanda y asegurar calibres comerciales uniformes.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Número de frutos por racimo óptimo (4 a 6 frutos según variedad)",
+          "Calibre y homogeneidad del fruto",
+          "Aborto natural por sobrecarga"
+        ],
+        "aplicacion_practica": "Ajuste de calidad comercial; en jitomates tipo bola se dejan estrictamente de 4 a 5 frutos por racimo, eliminando las flores distales o frutos amarrados tardíamente, logrando que los azúcares disponibles se distribuyan equitativamente y no se penalice el tamaño en los racimos superiores."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se realiza el trasplante definitivo de jitomate y se configuran las dimensiones de las camas de cultivo en el invernadero",
+        "consecuencia_biologica": "Un diseño con pasillos demasiado estrechos impide la circulación óptima del aire y la penetración de luz difusa, disparando la humedad relativa e induciendo enfermedades foliares.",
+        "accion_ingenieril": "Trazar camas de cultivo con un ancho de 0.9 a 1.0 metros y pasillos fijos de 0.5 a 0.6 metros, distribuyendo las plantas en doble hilera para asegurar una densidad final balanceada."
+      },
+      {
+        "condicion": "Si los brotes axilares (chupones) en las axilas de las hojas del jitomate superan los 5-10 cm de longitud sin ser removidos",
+        "consecuencia_biologica": "Pérdida de la dominancia apical, desvío masivo de asimilados hacia estructuras vegetativas innecesarias, enmarañamiento del dosel y generación de heridas grandes al podar que facilitan infecciones fúngicas.",
+        "accion_ingenieril": "Programar cuadrillas de desbrotado con una frecuencia estricta de cada 7 a 10 días, realizando el quiebre manual de los chupones cuando aún son tiernos (<5 cm) y aplicando un tratamiento cicatrizante/cúprico post-poda."
+      },
+      {
+        "condicion": "Si los racimos inferiores de jitomate han sido cosechados en su totalidad y las hojas basales comienzan a tornarse amarillentas o rozan el suelo",
+        "consecuencia_biologica": "Esas hojas se convierten en sumideros netos de carbono (hojas parásitas), bloquean la ventilación basal y actúan como puentes epidemiológicos para esporas de hongos.",
+        "accion_ingenieril": "Ejecutar una poda de hojas bajas retirando todo el material foliar situado por debajo del racimo en proceso de maduración, sacando inmediatamente los residuos del invernadero para su destrucción."
+      },
+      {
+        "condicion": "Si un racimo de jitomate amarra un número excesivo de frutos (>6 unidades) y se busca mantener el estándar de calidad y tamaño del mercado",
+        "consecuencia_biologica": "Fuerte competencia por carbohidratos dentro del racimo, resultando en una alta proporción de frutos pequeños (calibres no comerciales) y un desgaste severo de la planta.",
+        "accion_ingenieril": "Realizar el raleo manual de frutos dejando únicamente los 4 o 5 mejor formados y posicionados en el eje del racimo, eliminando los frutos de la punta (distales) antes de que superen el tamaño de una canica."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Sánchez del Castillo, F. (2013). Manual de Producción de Jitomate en Invernadero. Capítulo: Establecimiento y Prácticas de manejo del cultivo."
+    ]
+  },
+  {
+    "dominio_academico": "Física de Sustratos Regionales y Formulación Estequiométrica de la SNH (Jitomate)",
+    "conceptos_clave": [
+      {
+        "termino": "Función Estructural y Dinámica del Sustrato Hidropónico",
+        "definicion_uach": "Medio material sólido, inerte o activo, diferente del suelo, que sirve de soporte mecánico para el sistema radicular del jitomate y garantiza la retención e intercambio ideal entre la fase gaseosa (oxígeno) y la fase líquida (solución nutritiva).",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Anclaje radicular mecánico",
+          "Oxigenación de la rizosfera",
+          "Capacidad de retención hídrica y de nutrientes"
+        ],
+        "aplicacion_practica": "Diseño físico del entorno de la raíz en macetas individuales para evitar el estrés hídrico por desecación o la muerte radicular por anoxia."
+      },
+      {
+        "termino": "Mezcla Volumétrica Vermiculita - Piedra de Reynosa",
+        "definicion_uach": "Combinación física volumétrica calibrada que asocia un silicato hidratado de estructura laminar con alta retención de humedad (vermiculita) y un agregado mineral grueso local (piedra de Reynosa) para estabilizar la maceta y asegurar el drenaje libre de excedentes de riego.",
+        "ecuacion": "\\text{Relación de Mezcla (v:v)} = 4:1 \\quad (\\text{Vermiculita} : \\text{Piedra de Reynosa})",
+        "variables_relacionadas": [
+          "Diámetro de partículas de la piedra de Reynosa (3.0 - 6.0 mm)",
+          "Porosidad de aireación del medio",
+          "Deficiencia de oxígeno o asfixia radical (anoxia)"
+        ],
+        "aplicacion_practica": "Preparación del medio de llenado para macetas hidropónicas de jitomate; el operario mide 4 volúmenes de vermiculita por cada 1 volumen de piedra de Reynosa cribada dentro del rango granulométrico exigido."
+      },
+      {
+        "termino": "Protocolo de Inmersión Clorada Profiláctica",
+        "definicion_uach": "Tratamiento de saneamiento químico por oxidación acelerada al que debe someterse el componente inerte mineral crudo previo a su mezcla, destruyendo bacterias fitopatógenas, nematodos o propágulos fúngicos presentes en el material de acarreo.",
+        "ecuacion": "\\text{Concentración de Desinfección} = 2 \\text{ ml de cloro comercial} / 1 \\text{ L de agua natural}",
+        "variables_relacionadas": [
+          "Tiempo de remojo continuo (24 horas)",
+          "Lavado residual preventivo (2 enjuagues consecutivos con agua de la llave)",
+          "Incidencia post-trasplante de enfermedades radiculares"
+        ],
+        "aplicacion_practica": "Acondicionamiento sanitario; sumergir la piedra de Reynosa en la solución clorada durante un día entero y lavarla dos veces para eliminar residuos gaseosos de cloro elemental que provocarían quemaduras fitotóxicas en las raíces de las plántulas."
+      },
+      {
+        "termino": "Solución Nutritiva Hidropónica (SNH) y Fuentes Fertilizantes",
+        "definicion_uach": "Disolución acuosa balanceada de sales e iones esenciales que se derivan de la disociación de productos químicos comerciales (sólidos o líquidos) altamente solubles, formulada específicamente para la absorción metabólica directa del jitomate sin pasar por procesos de mineralización.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Fuentes comerciales sólidas de macronutrientes",
+          "Fuentes comerciales líquidas concentradas",
+          "Grado de pureza y solubilidad del fertilizante"
+        ],
+        "aplicacion_practica": "Programación del software del cabezal de fertirriego y pesado de las sales comerciales en los tanques madre A y B para alcanzar la concentración de iones óptima de la receta."
+      },
+      {
+        "termino": "Estrategia de Compensación Antagónica por Iones Cl- y Na+",
+        "definicion_uach": "Modificación estequiométrica prescriptiva de las proporciones iónicas de la SNH que se aplica obligatoriamente cuando el agua de pozo disponible posee niveles excesivos y salinos de cloro o sodio, utilizando el antagonismo competitivo para bloquear la entrada de estos elementos tóxicos a la planta.",
+        "ecuacion": "\\text{Relación de Bloqueo } Cl^{-}:NO_{3}^{-} = 1:2 \\quad \\text{y Relación } Na^{+}:K^{+} = 1:1",
+        "variables_relacionadas": [
+          "Exceso salino de cloruros (Cl-)",
+          "Exceso salino de sodio (Na+)",
+          "Antagonismo competitivo en los transportadores de membrana"
+        ],
+        "aplicacion_practica": "Ajuste matemático del fertirriego; si el agua contiene una concentración 'X' de cloruros, el calculista debe añadir al tanque el doble de esa concentración (2X) en forma de fuentes nítricas (NO3-) para inhibir competitivamente la absorción del cloro."
+      },
+      {
+        "termino": "Índice de Consumo Transpiratorio de Materia Seca",
+        "definicion_uach": "Constante fisiológica y biofísica que cuantifica el volumen real de agua que el cultivo de jitomate disipa hacia la atmósfera por transpiración y lixiviación para poder fijar y acumular una unidad de biomasa seca estructural.",
+        "ecuacion": "\\text{Consumo Hídrico de Biomasa} = 300 \\text{ a } 400 \\text{ L de H}_{2}\\text{O} / 1 \\text{ kg de materia seca acumulada}",
+        "variables_relacionadas": [
+          "Transpiración vegetal acumulada",
+          "Tasa de acumulación de materia seca (crecimiento)",
+          "Conductividad Eléctrica (CE) de la zona radical"
+        ],
+        "aplicacion_practica": "Control del potencial osmótico en la raíz; diluir la SNH aportando un mayor volumen de agua limpia si la evaporación concentra las sales en el drenaje de las macetas, resguardando la integridad del balance estequiométrico original."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se realiza el pesado e incorporación de los componentes del sustrato físico para el cultivo hidropónico de jitomate",
+        "consecuencia_biologica": "Cualquier alteración en el volumen que incremente la fracción fina o reduzca la piedra provocará retención excesiva de agua, eliminando el espacio poroso libre para los gases, asfixiando las raíces y deteniendo el metabolismo activo de absorción.",
+        "accion_ingenieril": "Mezclar estrictamente en una proporción 4:1 (v:v) de vermiculita y piedra de Reynosa (diámetro exacto de 3 a 6 mm), impidiendo la compactación del medio de crecimiento."
+      },
+      {
+        "condicion": "Si la piedra de Reynosa va a ser introducida en el contenedor para conformar la mezcla física final",
+        "consecuencia_biologica": "La omisión del proceso de desinfección expondrá al cultivo al ataque temprano de nematodos o esporas latentes de hongos del suelo, destruyendo los pelos absorbentes de las raíces post-trasplante.",
+        "accion_ingenieril": "Lavar el material mineral con agua natural y sumergirlo durante 24 horas continuas en una solución de 2 ml de cloro comercial por litro de agua, aplicando de forma obligatoria dos enjuagues posteriores con agua de la llave."
+      },
+      {
+        "condicion": "Si el análisis químico de laboratorio del agua de riego acusa concentraciones elevadas e inevitables de iones Cloro (Cl-) o Sodio (Na+)",
+        "consecuencia_biologica": "Absorción preferencial de elementos fitotóxicos que induce necrosis marginal en las hojas, reducción del área fotosintética, toxicidad celular y marchitez osmótica en las plantas de jitomate.",
+        "accion_ingenieril": "Calcular y reconfigurar la dosificación de la SNH imponiendo una relación Cl-:NO3- de 1:2 (dos partes de Nitratos por cada parte de Cloro presente en el agua) y una relación Na+:K+ de 1:1, bloqueando mecánicamente la asimilación radical de las sales dañinas."
+      },
+      {
+        "condicion": "Si el monitoreo regular con el conductivímetro portátil muestra que la Conductividad Eléctrica (CE) en el lixiviado o drenaje de las macetas se eleva por encima del umbral operativo",
+        "consecuencia_biologica": "La tasa de transpiración hídrica motivada por el microclima es superior a la absorción neta de nutrientes, acumulando un exceso de sales libres en el sustrato que eleva la presión osmótica de la rizosfera e impide la hidratación celular.",
+        "accion_ingenieril": "Diluir la Solución Nutritiva Hidropónica de entrada incrementando la inyección de agua limpia del cabezal, cuidando rigurosamente que las proporciones y equilibrios estequiométricos de los iones de la receta no sufran alteración alguna."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Samperio Ruiz, G. (1997). Hidroponía comercial: El cultivo de jitomate. México: Editorial Diana. ISBN: 968-13-3037-7."
+    ]
+  },
+  {
+    "dominio_academico": "Física de Sustratos Regionales y Formulación Estequiométrica de la SNH (Jitomate)",
+    "conceptos_clave": [
+      {
+        "termino": "Función Estructural y Dinámica del Sustrato Hidropónico",
+        "definicion_uach": "Medio material sólido, inerte o activo, diferente del suelo, que sirve de soporte mecánico para el sistema radicular del jitomate y garantiza la retención e intercambio ideal entre la fase gaseosa (oxígeno) y la fase líquida (solución nutritiva).",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Anclaje radicular mecánico",
+          "Oxigenación de la rizosfera",
+          "Capacidad de retención hídrica y de nutrientes"
+        ],
+        "aplicacion_practica": "Diseño físico del entorno de la raíz en macetas individuales para evitar el estrés hídrico por desecación o la muerte radicular por anoxia."
+      },
+      {
+        "termino": "Mezcla Volumétrica Vermiculita - Piedra de Reynosa",
+        "definicion_uach": "Combinación física volumétrica calibrada que asocia un silicato hidratado de estructura laminar con alta retención de humedad (vermiculita) y un agregado mineral grueso local (piedra de Reynosa) para estabilizar la maceta y asegurar el drenaje libre de excedentes de riego.",
+        "ecuacion": "\\text{Relación de Mezcla (v:v)} = 4:1 \\quad (\\text{Vermiculita} : \\text{Piedra de Reynosa})",
+        "variables_relacionadas": [
+          "Diámetro de partículas de la piedra de Reynosa (3.0 - 6.0 mm)",
+          "Porosidad de aireación del medio",
+          "Deficiencia de oxígeno o asfixia radical (anoxia)"
+        ],
+        "aplicacion_practica": "Preparación del medio de llenado para macetas hidropónicas de jitomate; el operario mide 4 volúmenes de vermiculita por cada 1 volumen de piedra de Reynosa cribada dentro del rango granulométrico exigido."
+      },
+      {
+        "termino": "Protocolo de Inmersión Clorada Profiláctica",
+        "definicion_uach": "Tratamiento de saneamiento químico por oxidación acelerada al que debe someterse el componente inerte mineral crudo previo a su mezcla, destruyendo bacterias fitopatógenas, nematodos o propágulos fúngicos presentes en el material de acarreo.",
+        "ecuacion": "\\text{Concentración de Desinfección} = 2 \\text{ ml de cloro comercial} / 1 \\text{ L de agua natural}",
+        "variables_relacionadas": [
+          "Tiempo de remojo continuo (24 horas)",
+          "Lavado residual preventivo (2 enjuagues consecutivos con agua de la llave)",
+          "Incidencia post-trasplante de enfermedades radiculares"
+        ],
+        "aplicacion_practica": "Acondicionamiento sanitario; sumergir la piedra de Reynosa en la solución clorada durante un día entero y lavarla dos veces para eliminar residuos gaseosos de cloro elemental que provocarían quemaduras fitotóxicas en las raíces de las plántulas."
+      },
+      {
+        "termino": "Solución Nutritiva Hidropónica (SNH) y Fuentes Fertilizantes",
+        "definicion_uach": "Disolución acuosa balanceada de sales e iones esenciales que se derivan de la disociación de productos químicos comerciales (sólidos o líquidos) altamente solubles, formulada específicamente para la absorción metabólica directa del jitomate sin pasar por procesos de mineralización.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Fuentes comerciales sólidas de macronutrientes",
+          "Fuentes comerciales líquidas concentradas",
+          "Grado de pureza y solubilidad del fertilizante"
+        ],
+        "aplicacion_practica": "Programación del software del cabezal de fertirriego y pesado de las sales comerciales en los tanques madre A y B para alcanzar la concentración de iones óptima de la receta."
+      },
+      {
+        "termino": "Estrategia de Compensación Antagónica por Iones Cl- y Na+",
+        "definicion_uach": "Modificación estequiométrica prescriptiva de las proporciones iónicas de la SNH que se aplica obligatoriamente cuando el agua de pozo disponible posee niveles excesivos y salinos de cloro o sodio, utilizando el antagonismo competitivo para bloquear la entrada de estos elementos tóxicos a la planta.",
+        "ecuacion": "\\text{Relación de Bloqueo } Cl^{-}:NO_{3}^{-} = 1:2 \\quad \\text{y Relación } Na^{+}:K^{+} = 1:1",
+        "variables_relacionadas": [
+          "Exceso salino de cloruros (Cl-)",
+          "Exceso salino de sodio (Na+)",
+          "Antagonismo competitivo en los transportadores de membrana"
+        ],
+        "aplicacion_practica": "Ajuste matemático del fertirriego; si el agua contiene una concentración 'X' de cloruros, el calculista debe añadir al tanque el doble de esa concentración (2X) en forma de fuentes nítricas (NO3-) para inhibir competitivamente la absorción del cloro."
+      },
+      {
+        "termino": "Índice de Consumo Transpiratorio de Materia Seca",
+        "definicion_uach": "Constante fisiológica y biofísica que cuantifica el volumen real de agua que el cultivo de jitomate disipa hacia la atmósfera por transpiración y lixiviación para poder fijar y acumular una unidad de biomasa seca estructural.",
+        "ecuacion": "\\text{Consumo Hídrico de Biomasa} = 300 \\text{ a } 400 \\text{ L de H}_{2}\\text{O} / 1 \\text{ kg de materia seca acumulada}",
+        "variables_relacionadas": [
+          "Transpiración vegetal acumulada",
+          "Tasa de acumulación de materia seca (crecimiento)",
+          "Conductividad Eléctrica (CE) de la zona radical"
+        ],
+        "aplicacion_practica": "Control del potencial osmótico en la raíz; diluir la SNH aportando un mayor volumen de agua limpia si la evaporación concentra las sales en el drenaje de las macetas, resguardando la integridad del balance estequiométrico original."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se realiza el pesado e incorporación de los componentes del sustrato físico para el cultivo hidropónico de jitomate",
+        "consecuencia_biologica": "Cualquier alteración en el volumen que incremente la fracción fina o reduzca la piedra provocará retención excesiva de agua, eliminando el espacio poroso libre para los gases, asfixiando las raíces y deteniendo el metabolismo activo de absorción.",
+        "accion_ingenieril": "Mezclar estrictamente en una proporción 4:1 (v:v) de vermiculita y piedra de Reynosa (diámetro exacto de 3 a 6 mm), impidiendo la compactación del medio de crecimiento."
+      },
+      {
+        "condicion": "Si la piedra de Reynosa va a ser introducida en el contenedor para conformar la mezcla física final",
+        "consecuencia_biologica": "La omisión del proceso de desinfección expondrá al cultivo al ataque temprano de nematodos o esporas latentes de hongos del suelo, destruyendo los pelos absorbentes de las raíces post-trasplante.",
+        "accion_ingenieril": "Lavar el material mineral con agua natural y sumergirlo durante 24 horas continuas en una solución de 2 ml de cloro comercial por litro de agua, aplicando de forma obligatoria dos enjuagues posteriores con agua de la llave."
+      },
+      {
+        "condicion": "Si el análisis químico de laboratorio del agua de riego acusa concentraciones elevadas e inevitables de iones Cloro (Cl-) o Sodio (Na+)",
+        "consecuencia_biologica": "Absorción preferencial de elementos fitotóxicos que induce necrosis marginal en las hojas, reducción del área fotosintética, toxicidad celular y marchitez osmótica en las plantas de jitomate.",
+        "accion_ingenieril": "Calcular y reconfigurar la dosificación de la SNH imponiendo una relación Cl-:NO3- de 1:2 (dos partes de Nitratos por cada parte de Cloro presente en el agua) y una relación Na+:K+ de 1:1, bloqueando mecánicamente la asimilación radical de las sales dañinas."
+      },
+      {
+        "condicion": "Si el monitoreo regular con el conductivímetro portátil muestra que la Conductividad Eléctrica (CE) en el lixiviado o drenaje de las macetas se eleva por encima del umbral operativo",
+        "consecuencia_biologica": "La tasa de transpiración hídrica motivada por el microclima es superior a la absorción neta de nutrientes, acumulando un exceso de sales libres en el sustrato que eleva la presión osmótica de la rizosfera e impide la hidratación celular.",
+        "accion_ingenieril": "Diluir la Solución Nutritiva Hidropónica de entrada incrementando la inyección de agua limpia del cabezal, cuidando rigurosamente que las proporciones y equilibrios estequiométricos de los iones de la receta no sufran alteración alguna."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Samperio Ruiz, G. (1997). Hidroponía comercial: El cultivo de jitomate. México: Editorial Diana. ISBN: 968-13-3037-7."
+    ]
+  }
+]

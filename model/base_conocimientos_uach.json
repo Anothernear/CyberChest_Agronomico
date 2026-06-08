@@ -1,0 +1,663 @@
+[
+  {
+    "dominio_academico": "Agrometeorología y Bioquímica (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Radiación Neta",
+        "definicion_uach": "Balance entre la radiación solar entrante y la radiación terrestre saliente, fundamental para el diseño de estructuras de protección.",
+        "ecuacion": "R_n = (1 - \\alpha)R_s + R_{ld} - R_{lu}",
+        "variables_relacionadas": [
+          "Radiación Solar",
+          "Albedo",
+          "Radiación Terrestre"
+        ],
+        "aplicacion_practica": "Determinación de la carga térmica en invernaderos para el diseño de sistemas de ventilación y sombreado."
+      },
+      {
+        "termino": "Grados Días de Desarrollo (GDD)",
+        "definicion_uach": "Índice térmico que cuantifica la acumulación de calor necesaria para que una planta complete sus fases fenológicas.",
+        "ecuacion": "GDD = \\sum \\left( \\frac{T_{max} + T_{min}}{2} - T_{base} \\right)",
+        "variables_relacionadas": [
+          "Temperatura Máxima",
+          "Temperatura Mínima",
+          "Temperatura Base"
+        ],
+        "aplicacion_practica": "Predicción de la fecha de cosecha y programación de siembras en horticultura protegida."
+      },
+      {
+        "termino": "Evapotranspiración (ET)",
+        "definicion_uach": "Pérdida combinada de agua por evaporación del suelo y transpiración de las plantas.",
+        "ecuacion": "ET_c = K_c \\times ET_o",
+        "variables_relacionadas": [
+          "Coeficiente de cultivo (Kc)",
+          "Evapotranspiración de referencia (ETo)"
+        ],
+        "aplicacion_practica": "Cálculo de láminas de riego y diseño de sistemas de fertirriego en ambientes controlados."
+      },
+      {
+        "termino": "Metabolitos Secundarios",
+        "definicion_uach": "Compuestos orgánicos sintetizados por las plantas que no participan directamente en el crecimiento, pero son cruciales para la defensa y adaptación ecológica.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Terpenoides",
+          "Compuestos Fenólicos",
+          "Alcaloides"
+        ],
+        "aplicacion_practica": "Uso de fitoalexinas y alelopáticos como bioplaguicidas naturales en la producción orgánica."
+      },
+      {
+        "termino": "Antocianinas",
+        "definicion_uach": "Pigmentos hidrosolubles pertenecientes al grupo de los flavonoides (compuestos fenólicos) responsables de las coloraciones rojas, púrpuras y azules.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Compuestos Fenólicos",
+          "Luz",
+          "Temperatura"
+        ],
+        "aplicacion_practica": "Indicador de calidad visual y valor nutricional en hortalizas y frutos bajo invernadero."
+      },
+      {
+        "termino": "Enzimas Indicadoras",
+        "definicion_uach": "Proteínas catalíticas cuya actividad varía ante la deficiencia de macro o microelementos específicos.",
+        "ecuacion": "v = \\frac{V_{max}[S]}{K_m + [S]}",
+        "variables_relacionadas": [
+          "Cinética enzimática",
+          "Nutrición mineral",
+          "Cofactores"
+        ],
+        "aplicacion_practica": "Diagnóstico precoz de deficiencias nutrimentales antes de la aparición de síntomas visuales."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la Radiación Solar > Umbral de saturación fotosintética",
+        "consecuencia_biologica": "Fotoinhibición y posible daño térmico a los tejidos foliares.",
+        "accion_ingenieril": "Activación de mallas de sombreado o sistemas de nebulización (fogging)."
+      },
+      {
+        "condicion": "Si la Temperatura < Temperatura Letal",
+        "consecuencia_biologica": "Cristalización del agua intracelular y ruptura de membranas (daño por helada).",
+        "accion_ingenieril": "Activación de sistemas de calefacción o riego por aspersión para protección térmica."
+      },
+      {
+        "condicion": "Si el Déficit de Presión de Vapor (DPV) > 2.0 kPa",
+        "consecuencia_biologica": "Cierre estomático excesivo y reducción de la tasa fotosintética.",
+        "accion_ingenieril": "Aumento de la humedad relativa mediante humidificadores o paneles evaporativos."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "ELÍAS, C.F. Y CASTELLVI S.F. 1996. Agrometeorología. Mundi-Prensa.",
+      "Lehninger, A. L, Nelson, D.L., y Cox, M.M. 1995. Principios de Bioquímica. Omega.",
+      "BARRADAS, V.L. 1994. Instrumentación Biometeorológica. UNAM/FCE.",
+      "Melo, V., y Cuamatzi, O. 2007. Bioquímica de los Procesos Metabólicos. Reverté."
+    ]
+  },
+  {
+    "dominio_academico": "Ecofisiología (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Determinantes Ecofisiológicos del Rendimiento",
+        "definicion_uach": "Factores que afectan el crecimiento y desarrollo de un cultivo y su rendimiento final, incluyendo la radiación interceptada, eficiencia de la radiación, distribución de materia seca, y pérdidas por respiración.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Radiación interceptada por el dosel",
+          "Eficiencia de la radiación en la producción de materia seca",
+          "Distribución de la materia seca",
+          "Pérdidas de materia seca por respiración",
+          "Duración del crecimiento vegetativo y reproductivo"
+        ],
+        "aplicacion_practica": "Optimización de la producción en horticultura protegida mediante el manejo de factores que influyen en el rendimiento."
+      },
+      {
+        "termino": "Índices Fisiotécnicos",
+        "definicion_uach": "Herramientas y métricas utilizadas para el análisis funcional del crecimiento de las plantas, como la tasa relativa de crecimiento, tasa de asimilación neta y el índice de área foliar.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Tasa relativa de crecimiento",
+          "Tasa absoluta de crecimiento",
+          "Tasa de asimilación neta",
+          "Tasa de crecimiento del cultivo",
+          "Índice de área foliar",
+          "Tasa foliar unitaria",
+          "Razón de área foliar",
+          "Área foliar específica",
+          "Duración del área foliar"
+        ],
+        "aplicacion_practica": "Investigación agronómica para evaluar el impacto de diferentes tratamientos o condiciones ambientales en el crecimiento de los cultivos."
+      },
+      {
+        "termino": "Arquetipo Vegetal",
+        "definicion_uach": "Concepto de planta ideal con características específicas para ambientes determinados, como los sistemas de Horticultura Protegida, considerando aspectos genéticos y culturales.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Procedimientos genéticos",
+          "Prácticas culturales",
+          "Ambientes protegidos"
+        ],
+        "aplicacion_practica": "Diseño y selección de variedades de cultivos adaptadas a condiciones específicas de invernadero para maximizar la eficiencia y el rendimiento."
+      },
+      {
+        "termino": "Límites de Tolerancia Ambiental",
+        "definicion_uach": "Rangos de factores ambientales (luz, CO2, temperatura, humedad, etc.) que una planta puede soportar sin sufrir estrés o daño significativo, influyendo en su crecimiento y desarrollo.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Luz",
+          "CO2",
+          "Temperatura",
+          "Humedad relativa",
+          "Viento",
+          "Humedad edáfica",
+          "Oxigenación de la raíz",
+          "pH",
+          "Concentración de sales",
+          "Nutrición mineral",
+          "Plagas y enfermedades",
+          "Sustancias tóxicas"
+        ],
+        "aplicacion_practica": "Desarrollo de criterios de manejo y control ambiental en sistemas de producción protegida para mantener las condiciones óptimas para el cultivo."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la radiación interceptada por el dosel es subóptima para la fase fenológica actual",
+        "consecuencia_biologica": "Reducción de la eficiencia de la radiación en la producción de materia seca y, consecuentemente, del rendimiento.",
+        "accion_ingenieril": "Ajuste de la densidad de siembra, optimización de la distribución de plantas o implementación de iluminación suplementaria."
+      },
+      {
+        "condicion": "Si los factores ambientales (temperatura, humedad, CO2) exceden los límites de tolerancia del cultivo",
+        "consecuencia_biologica": "Estrés fisiológico, reducción del crecimiento, daño a los tejidos o susceptibilidad a plagas y enfermedades.",
+        "accion_ingenieril": "Activación de sistemas de control climático (calefacción, ventilación, humidificación, inyección de CO2) en invernaderos para restaurar las condiciones óptimas."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Atherton, J. G., and J. Rudich (editores). 1986. The tomato Crop. Chapman and Hall. Londres, Inglaterra.",
+      "Gardner, F. P., Pearce, R. B., and Mitchel, R. L. 1990. Physiology of Crop Plants. Iowa State University Press. Iowa, EUA.",
+      "Jones, H. G., 1986. Plants and Microclimate. A Quantitative Approach to Environmental Plant Physiology. Cambridge University Press. Londres, Inglaterra.",
+      "Salisbury, F. B., and C. W. Ross., 1994. Fisiología vegetal. Grupo Editorial Iberoamericana. México, D. F."
+    ]
+  },
+  {
+    "dominio_academico": "Nutrición Vegetal (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Acceso Nutrimental",
+        "definicion_uach": "Mecanismos mediante los cuales los nutrimentos disponibles en el suelo son llevados hacia la raíz de la planta, incluyendo flujo de masas, difusión e interceptación-intercambio por contacto.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Flujo de masas",
+          "Difusión",
+          "Interceptación-intercambio por contacto",
+          "Rizósfera",
+          "Textura del suelo",
+          "Humedad del suelo"
+        ],
+        "aplicacion_practica": "Optimización de la disponibilidad de nutrientes en el sustrato para mejorar la absorción por las plantas en sistemas de horticultura protegida."
+      },
+      {
+        "termino": "Absorción Nutrimental",
+        "definicion_uach": "Proceso por el cual los nutrimentos pasan del exterior al interior de las raíces, involucrando mecanismos pasivos y activos, y condicionado por la anatomía de la raíz y la composición de la pared y membrana celular.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Movimiento apoplástico",
+          "Movimiento simplásmico",
+          "Potenciales electroquímicos",
+          "Transportadores",
+          "Cotransporte",
+          "Factores endógenos y exógenos"
+        ],
+        "aplicacion_practica": "Manejo de las condiciones del medio radicular (pH, oxigenación) para favorecer la absorción eficiente de nutrientes por los cultivos."
+      },
+      {
+        "termino": "Transporte de Nutrimentos y Fotosintatos",
+        "definicion_uach": "Movimiento y distribución de los nutrimentos y metabolitos dentro de la planta, desde la raíz hasta los órganos de consumo, a través del xilema y el floema.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Relación fuente-demanda",
+          "Transporte radial",
+          "Transporte en el xilema",
+          "Transporte en el floema",
+          "Factores que afectan el transporte"
+        ],
+        "aplicacion_practica": "Diagnóstico de problemas de translocación de nutrientes y aplicación de correctivos para asegurar una distribución adecuada en la planta."
+      },
+      {
+        "termino": "Funciones de los Nutrimentos",
+        "definicion_uach": "Papel específico de cada elemento esencial en los procesos bioquímicos, fisiológicos y ecológicos de la planta, incluyendo su participación en la formación de moléculas y su interacción con el ambiente.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Antagonismo",
+          "Sinergismo",
+          "Funciones bioquímicas",
+          "Funciones fisiológicas",
+          "Funciones ecológicas"
+        ],
+        "aplicacion_practica": "Formulación de programas de fertilización balanceados para satisfacer las necesidades específicas de los cultivos en diferentes etapas de desarrollo."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la concentración de un nutrimento esencial en la solución del suelo es baja",
+        "consecuencia_biologica": "Reducción del crecimiento, deficiencias nutricionales y disminución del rendimiento.",
+        "accion_ingenieril": "Aplicación de fertilizantes específicos o ajuste del pH del suelo para aumentar la disponibilidad del nutriente."
+      },
+      {
+        "condicion": "Si la absorción de un nutriente es inhibida por factores externos (ej. pH extremo, anoxia radicular)",
+        "consecuencia_biologica": "Acumulación del nutriente en el suelo y deficiencia en la planta, a pesar de su presencia.",
+        "accion_ingenieril": "Corrección de las condiciones del suelo o sustrato (ej. aireación, ajuste de pH) para optimizar la absorción."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "Bidwell, R. G. S., 1993. Fisiología Vegetal. AGT Editor. México, D. F.",
+      "Salisbury, F. B., and C. W. Ross., 1994. Fisiología vegetal. Grupo Editorial Iberoamericana. México, D. F."
+    ]
+  },
+  {
+    "dominio_academico": "Diagnóstico y Control de Plagas Hortícolas (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Manejo Integrado de Plagas (MIP)",
+        "definicion_uach": "Estrategia que combina diferentes métodos de control (cultural, biológico, físico, químico) para mantener las poblaciones de plagas por debajo del umbral de daño económico, minimizando el impacto ambiental.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Umbral de daño económico",
+          "Monitoreo de plagas",
+          "Control biológico",
+          "Control cultural",
+          "Control físico",
+          "Control químico"
+        ],
+        "aplicacion_practica": "Implementación de programas de control de plagas sostenibles en cultivos protegidos, reduciendo la dependencia de pesticidas químicos."
+      },
+      {
+        "termino": "Factores Ambientales y Plagas",
+        "definicion_uach": "Influencia de condiciones como temperatura, luz, humedad relativa, viento, lluvia y suelo en el desarrollo y dispersión de poblaciones de plagas en cultivos protegidos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Temperatura",
+          "Luz",
+          "Humedad relativa",
+          "Viento",
+          "Lluvia",
+          "Suelo"
+        ],
+        "aplicacion_practica": "Modificación del microclima del invernadero para crear condiciones desfavorables para el desarrollo de plagas y reducir su incidencia."
+      },
+      {
+        "termino": "Pesticidas y su Aplicación",
+        "definicion_uach": "Clasificación y características de los productos químicos y biológicos utilizados para el control de plagas, así como las técnicas de calibración de equipos de aplicación y el uso de equipo de protección personal.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Insecticidas biológicos",
+          "Insecticidas químicos",
+          "Productos repelentes",
+          "Calibración de equipos",
+          "Equipo de protección personal"
+        ],
+        "aplicacion_practica": "Aplicación segura y eficiente de productos fitosanitarios, asegurando la dosis correcta y minimizando riesgos para el aplicador y el medio ambiente."
+      },
+      {
+        "termino": "Métodos de Control de Plagas",
+        "definicion_uach": "Diversas estrategias para el manejo de plagas, incluyendo control legal (normativas), físico (barreras), cultural (prácticas agrícolas), biológico (organismos benéficos) y químico (pesticidas).",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Control legal",
+          "Control físico",
+          "Control cultural",
+          "Control biológico",
+          "Control químico"
+        ],
+        "aplicacion_practica": "Selección del método de control más apropiado para cada situación específica de plaga y cultivo, integrando diferentes enfoques para una gestión efectiva."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la población de una plaga supera el umbral de daño económico",
+        "consecuencia_biologica": "Pérdidas significativas en el rendimiento y calidad del cultivo.",
+        "accion_ingenieril": "Implementación de medidas de control directo, priorizando opciones biológicas o culturales antes que químicas."
+      },
+      {
+        "condicion": "Si las condiciones ambientales son favorables para el desarrollo de una plaga específica",
+        "consecuencia_biologica": "Aumento rápido de la población de la plaga y mayor riesgo de infestación.",
+        "accion_ingenieril": "Monitoreo intensivo de la plaga y aplicación de medidas preventivas o de control temprano."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Sistemas Hidropónicos (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Hidroponía",
+        "definicion_uach": "Sistema de producción en el que las raíces de las plantas se irrigan con una mezcla de elementos nutritivos esenciales disueltos en el agua, utilizando un material inerte o la misma solución nutritiva como sustrato.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Solución nutritiva",
+          "Sustratos inertes",
+          "Cultivo sin suelo"
+        ],
+        "aplicacion_practica": "Producción de hortalizas y flores en ambientes controlados, optimizando el uso de agua y nutrientes."
+      },
+      {
+        "termino": "Soluciones Nutritivas",
+        "definicion_uach": "Mezclas de elementos esenciales disueltos en agua, formuladas para satisfacer las necesidades nutricionales específicas de los cultivos en sistemas hidropónicos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Concentración de nutrientes",
+          "pH",
+          "Conductividad eléctrica",
+          "Fuentes fertilizantes"
+        ],
+        "aplicacion_practica": "Cálculo, preparación y manejo de soluciones para asegurar una nutrición óptima y corregir deficiencias o toxicidades."
+      },
+      {
+        "termino": "Sustratos Absorbentes",
+        "definicion_uach": "Materiales inertes utilizados en hidroponía para proporcionar soporte físico a las plantas y retener la solución nutritiva, con propiedades físicas y químicas específicas.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Capacidad de retención de agua",
+          "Aireación",
+          "Estabilidad química",
+          "Volumen"
+        ],
+        "aplicacion_practica": "Selección y manejo adecuado de sustratos (ej. lana de roca, fibra de coco, perlita) para diferentes especies y sistemas hidropónicos."
+      },
+      {
+        "termino": "Modalidades de Cultivo Hidropónico",
+        "definicion_uach": "Diferentes técnicas de cultivo sin suelo, como el sistema de balsa, la técnica de la película nutritiva (NFT), New Growing System (NGS), aeroponía y cultivo en grava.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Cultivo en balsa",
+          "NFT",
+          "NGS",
+          "Aeroponía",
+          "Cultivo en grava"
+        ],
+        "aplicacion_practica": "Diseño e implementación del sistema hidropónico más adecuado según el tipo de cultivo, recursos disponibles y objetivos de producción."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si el análisis químico del agua de riego indica alta concentración de sales o elementos no deseados",
+        "consecuencia_biologica": "Toxicidad para las plantas y desequilibrio nutricional.",
+        "accion_ingenieril": "Ajuste de la formulación de la solución nutritiva o tratamiento previo del agua para adecuarla a los estándares hidropónicos."
+      },
+      {
+        "condicion": "Si se observan síntomas de deficiencia o toxicidad de nutrientes en las plantas hidropónicas",
+        "consecuencia_biologica": "Reducción del crecimiento, rendimiento y calidad del cultivo.",
+        "accion_ingenieril": "Revisión y ajuste de la composición de la solución nutritiva, pH y conductividad eléctrica para corregir el desequilibrio."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Producción de Hortalizas (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Horticultura Protegida",
+        "definicion_uach": "Cultivo de hortalizas bajo estructuras de protección (acolchados, microtúneles, invernaderos) para asegurar altos rendimientos, calidad e inocuidad, frente a factores ambientales adversos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Invernaderos",
+          "Acolchados",
+          "Microtúneles",
+          "Fertirriego",
+          "Suelo",
+          "Hidroponía"
+        ],
+        "aplicacion_practica": "Producción intensiva de hortalizas de alto valor económico, como jitomate, chiles, pepinos, lechugas y fresas, en condiciones controladas."
+      },
+      {
+        "termino": "Producción de Plántulas",
+        "definicion_uach": "Técnicas y procedimientos para la producción exitosa de plántulas de calidad de diferentes especies olerícolas, incluyendo tipos de propagación, almácigos, sustratos, siembra y manejo ambiental.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Propagación",
+          "Almácigos",
+          "Sustratos",
+          "Siembra",
+          "Riego",
+          "Nutrición",
+          "Control fitosanitario",
+          "Injerto",
+          "Vernalización"
+        ],
+        "aplicacion_practica": "Establecimiento de cultivos con material vegetal sano y vigoroso, adaptado a las condiciones de horticultura protegida."
+      },
+      {
+        "termino": "Manejo del Cultivo (Jitomate, Chiles, Pepinos, Lechugas, Fresas)",
+        "definicion_uach": "Conjunto de prácticas agrícolas específicas para cada especie hortícola bajo sistemas protegidos, abarcando desde la elección de cultivares hasta la cosecha y postcosecha.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Cultivares",
+          "Siembra",
+          "Trasplante",
+          "Riego",
+          "Nutrición",
+          "Control ambiental (temperatura, luz, humedad)",
+          "Poda",
+          "Conducción/Entutorado",
+          "Control fitosanitario",
+          "Cosecha",
+          "Clasificación y empaque"
+        ],
+        "aplicacion_practica": "Optimización de los procesos productivos para maximizar el rendimiento y la calidad de las hortalizas en invernaderos y otros sistemas protegidos."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si los rangos de factores climáticos y edáficos no son óptimos para una especie hortícola específica",
+        "consecuencia_biologica": "Reducción del crecimiento, desarrollo y rendimiento, así como problemas de calidad.",
+        "accion_ingenieril": "Ajuste de las condiciones ambientales dentro del invernadero (temperatura, humedad, luz) y manejo del sustrato (riego, nutrición) para adecuarlos a los requerimientos del cultivo."
+      },
+      {
+        "condicion": "Si se detectan plagas o enfermedades en el cultivo de hortalizas protegidas",
+        "consecuencia_biologica": "Daños en el cultivo, pérdidas de rendimiento y calidad, y posible propagación a otras plantas.",
+        "accion_ingenieril": "Implementación de un programa de control fitosanitario integrado, priorizando métodos preventivos y biológicos, y utilizando productos químicos de forma selectiva y responsable."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Producción de Flores y Ornamentales (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Floricultura y Plantas de Ornato",
+        "definicion_uach": "Actividad agrícola enfocada en la producción de flores de corte y plantas ornamentales, con importancia económica y social, especialmente bajo ambientes protegidos.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Flores de corte",
+          "Plantas en maceta",
+          "Invernaderos",
+          "Mercado"
+        ],
+        "aplicacion_practica": "Desarrollo de proyectos productivos de alto valor en agricultura protegida, considerando las oportunidades comerciales a nivel nacional e internacional."
+      },
+      {
+        "termino": "Técnicas de Producción de Flores de Corte",
+        "definicion_uach": "Métodos y prácticas específicas para el cultivo de flores de corte de importancia económica (rosas, clavel, crisantemo, gerbera, tulipán, lilium, anthurium), incluyendo manejo ambiental, propagación, control fitosanitario y rentabilidad.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Tipos y variedades",
+          "Manejo ambiental",
+          "Propagación (esquejes, bulbos)",
+          "Prácticas de manejo",
+          "Control de plagas y enfermedades",
+          "Costos de cultivo"
+        ],
+        "aplicacion_practica": "Dominio del proceso productivo desde el establecimiento hasta la cosecha, para asegurar la calidad y rentabilidad de las flores de corte."
+      },
+      {
+        "termino": "Producción de Plantas Ornamentales en Maceta",
+        "definicion_uach": "Técnicas para el cultivo de especies ornamentales en macetas (nochebuena, otras flores y follajes), abarcando manejo ambiental, propagación, labores de cultivo y control fitosanitario.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Especies y variedades",
+          "Manejo ambiental",
+          "Propagación y reproducción",
+          "Labores de manejo",
+          "Control de plagas y enfermedades"
+        ],
+        "aplicacion_practica": "Implementación de proyectos productivos de plantas ornamentales en maceta en agricultura protegida."
+      },
+      {
+        "termino": "Mercados y Comercio de Ornamentales",
+        "definicion_uach": "Análisis de los canales de comercialización, criterios de cosecha, manejo poscosecha e indicadores de venta para flores de corte y plantas ornamentales en maceta.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Criterios de cosecha",
+          "Manejo poscosecha",
+          "Mercados nacionales e internacionales",
+          "Indicadores de venta"
+        ],
+        "aplicacion_practica": "Toma de decisiones estratégicas para la comercialización exitosa de productos de floricultura y ornamentales."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si se busca maximizar la rentabilidad en la producción de flores de corte",
+        "consecuencia_biologica": "Selección de variedades de alta demanda y optimización de las condiciones de cultivo para obtener la mejor calidad y rendimiento.",
+        "accion_ingenieril": "Implementación de sistemas de control climático avanzado y fertirriego preciso, junto con un manejo integrado de plagas y enfermedades."
+      },
+      {
+        "condicion": "Si se detectan problemas de calidad en las flores o plantas ornamentales (ej. coloración deficiente, tamaño inadecuado)",
+        "consecuencia_biologica": "Reducción del valor comercial y dificultad para acceder a mercados exigentes.",
+        "accion_ingenieril": "Revisión de las prácticas de manejo (nutrición, riego, control ambiental) y ajuste según los requerimientos específicos de la especie y el mercado."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Aplicación Hortícola (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Ejecución y Operación de Proyectos de Inversión",
+        "definicion_uach": "Fase posterior a la planeación de proyectos hortícolas, donde se ponen en práctica las actividades para la consolidación de una empresa rural, incluyendo el análisis del estudio de ingeniería y el programa de ejecución.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Estudio de ingeniería",
+          "Programa de ejecución",
+          "Consolidación de empresa rural"
+        ],
+        "aplicacion_practica": "Implementación de proyectos productivos en campo, ya sea en unidades en marcha o en nuevas iniciativas, con el apoyo de asesoría especializada."
+      },
+      {
+        "termino": "Instalación o Ejecución",
+        "definicion_uach": "Aplicación práctica de los planteamientos de ejecución de actividades plasmadas en el documento del proyecto, formalizando el inicio de la instalación del proyecto.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Acuerdos y convenios",
+          "Gestión de recursos",
+          "Organización"
+        ],
+        "aplicacion_practica": "Establecimiento de las bases legales, financieras y organizativas para el arranque de un proyecto hortícola."
+      },
+      {
+        "termino": "Operación del Proyecto",
+        "definicion_uach": "Proceso operativo de un proyecto dentro de una unidad de producción o empresa, mediante actividades de programación y definición de instrumentos de control para la toma de decisiones.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Diseño de instrumentos de control (ingresos, egresos)",
+          "Bitácoras",
+          "Supervisión"
+        ],
+        "aplicacion_practica": "Monitoreo y control de las actividades diarias de la empresa hortícola para identificar problemas y tomar decisiones oportunas."
+      },
+      {
+        "termino": "Plan de Mejora",
+        "definicion_uach": "Elaboración de un plan basado en observaciones cualitativas y cuantitativas durante la operación, sistematizando datos para generar nuevas propuestas que mejoren la productividad y competitividad.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Diagnóstico",
+          "Análisis de variaciones",
+          "Detección de problemas",
+          "Diseño de estrategias"
+        ],
+        "aplicacion_practica": "Optimización continua de los procesos productivos y administrativos de la empresa hortícola para incrementar la eficiencia y rentabilidad."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si los instrumentos de registro y control detectan desviaciones significativas en el programa de ejecución o en los indicadores financieros",
+        "consecuencia_biologica": "Retrasos en el proyecto, sobrecostos o disminución de la rentabilidad esperada.",
+        "accion_ingenieril": "Activación del plan de mejora, realizando un diagnóstico, análisis de variaciones y diseño de estrategias correctivas."
+      },
+      {
+        "condicion": "Si el análisis estratégico del entorno revela nuevas necesidades o oportunidades de mercado",
+        "consecuencia_biologica": "Posibilidad de expandir el negocio o mejorar la competitividad.",
+        "accion_ingenieril": "Desarrollo de nuevas propuestas o adaptación de las existentes para aprovechar las oportunidades detectadas."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  },
+  {
+    "dominio_academico": "Producción de Frutales (UACh)",
+    "conceptos_clave": [
+      {
+        "termino": "Fruticultura Intensiva",
+        "definicion_uach": "Sistema de producción de frutales que busca altos rendimientos por unidad de superficie y mejor calidad de productos, a menudo utilizando producción forzada y programación de cosechas.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Altas densidades de plantación",
+          "Producción forzada",
+          "Programación de cosechas",
+          "Calidad del fruto"
+        ],
+        "aplicacion_practica": "Establecimiento de huertos frutícolas con variedades adaptadas y manejo técnico para maximizar la rentabilidad y el acceso a mercados."
+      },
+      {
+        "termino": "Yemas, Flores y Frutos",
+        "definicion_uach": "Componentes reproductivos de los frutales, cuyo desarrollo y crecimiento son influenciados por factores ambientales y determinan la productividad y calidad del producto.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Clasificación de yemas",
+          "Letargo y compensadores de frío",
+          "Diferenciación floral",
+          "Polinización y fecundación",
+          "Alternancia en la producción",
+          "Caídas de frutos",
+          "Aclareo de frutos",
+          "Desarrollo y maduración del fruto"
+        ],
+        "aplicacion_practica": "Manejo de la floración y fructificación para optimizar la carga de frutos y asegurar una cosecha de calidad."
+      },
+      {
+        "termino": "Planeación y Manejo de Huertos",
+        "definicion_uach": "Conjunto de decisiones y prácticas para el establecimiento y mantenimiento de huertos frutícolas, incluyendo la selección de variantes de poda, manejo del suelo, riego, fertilización y control fitosanitario.",
+        "ecuacion": "N/A",
+        "variables_relacionadas": [
+          "Poda y sistemas de conducción",
+          "Manejo de agua y suelo",
+          "Fertilización (análisis foliar, suelo)",
+          "Control fitosanitario (plagas, enfermedades, malezas)",
+          "Cosecha y manejo postcosecha"
+        ],
+        "aplicacion_practica": "Diseño e implementación de estrategias de manejo para huertos tradicionales e intensivos, adaptadas a las condiciones agroclimáticas y la especie cultivada."
+      }
+    ],
+    "reglas_de_decision": [
+      {
+        "condicion": "Si la diferenciación floral es insuficiente o la polinización es deficiente",
+        "consecuencia_biologica": "Baja producción de frutos o frutos de mala calidad.",
+        "accion_ingenieril": "Aplicación de técnicas para inducir la floración, mejorar la polinización (ej. introducción de polinizadores) o realizar aclareo de frutos para optimizar el tamaño."
+      },
+      {
+        "condicion": "Si los análisis de suelo o foliares indican deficiencias nutricionales en el huerto",
+        "consecuencia_biologica": "Reducción del crecimiento, desarrollo y rendimiento de los frutales.",
+        "accion_ingenieril": "Ajuste del programa de fertilización, utilizando fuentes específicas y métodos de aplicación adecuados para corregir las deficiencias."
+      }
+    ],
+    "bibliografia_obligatoria": [
+      "N/A (No se encontró bibliografía específica para esta sección en el rango de lectura proporcionado)"
+    ]
+  }
+]
