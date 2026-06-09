@@ -1,5 +1,16 @@
 #!/bin/bash
 
+#####################################
+# Este script lanzador.sh es el orquestador
+# principal de BMO. Su trabajo no es procesar
+# la IA directamente, sino actuar como el director:
+# levanta los scripts de Python, limpia la memoria de
+# la Radxa, decora la terminal con colores y controla
+# el ciclo de vida del robot para que escuche, procese
+# y hable en el orden correcto sin que los módulos se 
+# pisen entre sí.
+#####################################
+
 # --- CONFIGURACIÓN ---
 BMO_DIR="/home/radxa/Documents/BMO"
 VENV="$BMO_DIR/venv_bmo/bin/activate"

@@ -25,7 +25,7 @@ def AjustarGanancia():
 
 audio_queue = queue.Queue()
 EscuchandoActivo = True 
-vad = webrtcvad.Vad(3) # Nivel 3: El más agresivo
+vad = webrtcvad.Vad(1) # Nivel 1: El menos agresivo
 
 def EnviarAlCerebro(Texto):
     """Envía el texto y mata el proceso para forzar el reinicio del lanzador"""
