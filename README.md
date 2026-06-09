@@ -19,7 +19,7 @@ Para desplegar y ejecutar este proyecto localmente en la placa, sigue estos paso
 1. **Clonar el repositorio y entrar al directorio:**
 ```bash
    git clone [https://github.com/Anothernear/CyberChest_Agronomico.git](https://github.com/Anothernear/CyberChest_Agronomico.git)
-   cd CyberChest_Agronomico
+   cd CyberChest_Agronomico```
 
 ---
 
@@ -53,3 +53,4 @@ El orquestador divide la ejecución en dos capas: **Servicios Asíncronos** (sie
               │
               ▼ ( soft_cleanup(): Libera /dev/snd/pcmC1D0c )
        [ Reinicia Ciclo ]
+```
