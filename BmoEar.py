@@ -10,11 +10,18 @@ DevId = 1
 
 def enviar_emocion(emocion):
     try:
-        # Abrimos el pipe en modo escritura
-        with open("/tmp/bmo_pipe", "w") as pipe:
+        pipe_path = "/tmp/bmo_pipe"
+        # Verificar que el pipe existe
+        if not os.path.exists(pipe_path):
+            print(f"Advertencia: Pipe {pipe_path} no existe")
+            return
+        
+        # Abrir en modo no bloqueante con timeout
+        with open(pipe_path, "w") as pipe:
             pipe.write(f"{emocion}\n")
+            pipe.flush()  # Forzar escritura inmediata
     except Exception as e:
-        print(f"Error al enviar emoción: {e}")
+        print(f"Error al enviar emoción '{emocion}': {e}")
 
 def AjustarGanancia():
     """Configura el hardware de audio para reducir ruido de fondo"""
