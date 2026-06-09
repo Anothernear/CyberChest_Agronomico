@@ -1,10 +1,4 @@
-¡Hola! Con gusto. Le he dado una buena limpieza al archivo Markdown para que se vea mucho más profesional, limpio y fácil de leer.
 
-He corregido los bloques de código mal cerrados, unificado la estructura de títulos, mejorado el flujo visual con separadores estratégicos y optimizado el diagrama de flujo en texto para que sea perfectamente legible.
-
-Aquí tienes el código Markdown mejorado:
-
-```markdown
 # BMO - CyberChest Agronómico
 
 Este módulo contiene la lógica central, el procesamiento de audio, la síntesis de voz y el control de hardware para el robot BMO, ejecutado sobre el hardware embebido **Radxa Cubie A7A**.
