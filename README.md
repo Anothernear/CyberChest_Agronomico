@@ -1,29 +1,37 @@
-#  BMO - CyberChest Agronómico
+¡Hola! Con gusto. Le he dado una buena limpieza al archivo Markdown para que se vea mucho más profesional, limpio y fácil de leer.
 
-Este módulo contiene la lógica central, el procesamiento de audio, la síntesis de voz y el control de hardware para el robot BMO, ejecutado sobre hardware embebido Radxa Cubie A7A.
+He corregido los bloques de código mal cerrados, unificado la estructura de títulos, mejorado el flujo visual con separadores estratégicos y optimizado el diagrama de flujo en texto para que sea perfectamente legible.
+
+Aquí tienes el código Markdown mejorado:
+
+```markdown
+# BMO - CyberChest Agronómico
+
+Este módulo contiene la lógica central, el procesamiento de audio, la síntesis de voz y el control de hardware para el robot BMO, ejecutado sobre el hardware embebido **Radxa Cubie A7A**.
 
 ---
 
-## Requisitos del Sistema
-- **Hardware:** Radxa Cubie A7A (Allwinner A733).
-- **Periféricos:** Pantalla SPI ILI9486, micrófono/altavoz USB o HAT de audio.
-- **Sistemas Operativos:** Distribuciones Linux optimizadas para arquitectura ARM (ej. Parrot OS / Debian).
-- **Dependencias Principales:** Python 3.10+, Virtualenv.
+## 📋 Requisitos del Sistema
+
+* **Hardware:** Radxa Cubie A7A (Allwinner A733).
+* **Periféricos:** Pantalla SPI ILI9486, micrófono/altavoz USB o HAT de audio.
+* **Sistemas Operativos:** Distribuciones Linux optimizadas para arquitectura ARM (ej. Parrot OS / Debian).
+* **Dependencias Principales:** Python 3.10+, Virtualenv.
 
 ---
 
-## Instalación y Configuración del Entorno
+## ⚙️ Instalación y Configuración del Entorno
 
 Para desplegar y ejecutar este proyecto localmente en la placa, sigue estos pasos:
 
-1. **Clonar el repositorio y entrar al directorio:**
-```bash
+1. **Clonar el repositorio y acceder al directorio:**
+   ```bash
    git clone [https://github.com/Anothernear/CyberChest_Agronomico.git](https://github.com/Anothernear/CyberChest_Agronomico.git)
-   cd CyberChest_Agronomico```
+   cd CyberChest_Agronomico
+
+```
 
 ---
-
-# Descripción:
 
 ## 🪵 Arquitectura del Orquestador (`lanzador.sh`)
 
@@ -31,19 +39,22 @@ El ciclo de vida y la sincronización de los módulos de BMO son gestionados por
 
 ### 🔄 Flujo de Trabajo y Ciclo de Vida
 
-El orquestador divide la ejecución en dos capas: **Servicios Asíncronos** (siempre activos en segundo plano) y el **Bucle de Interacción Síncrono** (Secuencia Escuchar-Pensar-Hablar).
+El orquestador divide la ejecución en dos capas:
+
+* **Servicios Asíncronos:** Siempre activos en segundo plano.
+* **Bucle de Interacción Síncrono:** Secuencia clásica de *Escuchar-Pensar-Hablar*.
 
 ```text
        [ Lanzador.sh ] ──> Levanta en Background ──> BmoAudio.py & BmoBrain.py
-              │
-              ▼ (Bucle Infinito)
+             │
+             ▼ (Bucle Infinito)
     ┌───────────────────┐
-    │  1. BmoEar.py     │ <── (Filtro Oído: Corre en primer plano)
+    │   1. BmoEar.py    │ <── (Filtro Oído: Corre en primer plano)
     └─────────┬─────────┘
               │ (Cierra al detectar silencio / fin de voz)
               ▼
     ┌───────────────────┐
-    │ Espere LLM        │ <── (Bloqueado hasta que aparece /tmp/brain_done)
+    │    Espere LLM     │ <── (Bloqueado hasta que aparece /tmp/brain_done)
     └─────────┬─────────┘
               │
               ▼
@@ -53,4 +64,5 @@ El orquestador divide la ejecución en dos capas: **Servicios Asíncronos** (sie
               │
               ▼ ( soft_cleanup(): Libera /dev/snd/pcmC1D0c )
        [ Reinicia Ciclo ]
+
 ```
